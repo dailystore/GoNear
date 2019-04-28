@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Login | GoOhYeah</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Material Design Bootstrap -->
+    <link href="css/compiled.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/mdb.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
+    <script src="https://use.fontawesome.com/02a2437bce.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+    <div style="height: 100vh">
+
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-strong-orange">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="modal" data-target="#basicExample" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="img/common/logo.png" alt="GoOhYeah"/>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav1">
+                    <ul class="navbar-nav ml-auto"></ul>
+                    <form class="form-inline waves-effect waves-light">
+                        <input class="form-control" type="text" placeholder="Search">
+                        <input class="form-control" type="text" placeholder="Location">
+                        <a type="submit" class="nav-link waves-effect waves-light">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </form>
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                        <li class="nav-item">
+                            <a href="list.html" class="nav-link waves-effect waves-light">
+                                <i class="fa fa-user"></i>
+                                Login/Sign-up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+
+            <div id="flipper-card" class="max-width-500 mx-auto d-block">
+                <form id="sign-in-box" class="front">
+                    <div class="card-body">
+                        <h2 class="text-center">Sign in for claiming business</h2>
+                        <!--Header-->
+                        <!--Body-->
+                        <div class="md-form">
+                            <i class="fa fa-user prefix"></i>
+                            <input id="email-phone" name="username" type="text" class="form-control" required>
+                            <label for="email-phone">Your email/phone number</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix"></i>
+                            <input type="password" id="password" name="password" class="form-control" required>
+                            <label for="password">Your password</label>
+                        </div>
+                        <div class="text-center">
+                            <button id="sign-in" class="btn btn-warning" type="submit">
+                                Sign in
+                                <i class="fa fa-sign-in"></i>
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="options">
+                                <p>New on GoOhYeah? <a id="flip-btn" href="#">Sign Up</a></p>
+                                <p>Forgot <a href="#">Password?</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+                <form id="sign-up-box" class="back">
+                    <div class="card-body">
+                        <h2 class="text-center">Sign up for GoOhYeah</h2>
+                        <!--Header-->
+                        <div class="text-center">
+                            <a href="#" data-toggle="tooltip" title="" data-original-title="Sign up by Facebook" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+                            <a href="#" data-toggle="tooltip" title="" data-original-title="Sign up by Google+" class="btn-floating btn-small btn-gplus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" data-toggle="tooltip" title="" data-original-title="Sign up by Twitter" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
+                            <a href="#" data-toggle="tooltip" title="" data-original-title="Sign up by Instagram" class="btn-floating btn-small btn-ins"><i class="fa fa-instagram"></i></a>
+                            <a href="#" data-toggle="tooltip" title="" data-original-title="Sign up by Yahoo" class="btn-floating btn-small btn-yahoo"><i class="fa fa-yahoo"></i></a>
+                            <a href="#" data-toggle="tooltip" title="" data-original-title="Sign up by Linkedin" class="btn-floating btn-small btn-li"><i class="fa fa-linkedin"></i></a>
+                            <small class="d-block">or be classical</small>
+                        </div>
+                        <!--Body-->
+
+                        <div class="md-form">
+                            <i class="fa fa-user prefix"></i>
+                            <input type="text" name="email" id="sign-up-email" class="form-control">
+                            <label for="sign-up-email">Your email</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-mobile prefix"></i>
+                            <input type="text" name="phone" id="sign-up-phone" class="form-control">
+                            <label for="sign-up-phone">Your phone number</label>
+                        </div>
+
+                        <div class="md-form">
+                                <i class="fa fa-id-badge prefix"></i>
+                                <input type="text" name="username" id="sign-up-name" class="form-control">
+                                <label for="sign-up-name">Your username</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix"></i>
+                                <input type="password" name="password" id="sign-up-password" class="form-control">
+                            <label for="sign-up-password">Your password</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-retweet prefix"></i>
+                            <input type="password" name="repeat-password" id="repeat-password" class="form-control">
+                            <label for="repeat-password">Repeat your password</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-id-badge prefix"></i>
+                            <input type="text" name="personal-info" id="sign-up-personal-info" class="form-control">
+                            <label for="sign-up-personal-info">Your Personal Info</label>
+                        </div>
+
+                        <div class="md-form">
+                            <select class="mdb-select" id="account-type" name="account-type">
+                                <option disabled selected>Choose your type of account</option>
+                                <option value="2">Business</option>
+                                <option value="1">Explorer</option>
+                            </select>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-warning" type="submit">
+                                Sign up
+                                <i class="fa fa-user-plus"></i>
+                            </button>
+                        </div>
+                        <!--Footer-->
+                        <div class="modal-footer">
+                            <div class="options">
+                                <p>Already have acccount? <a id="unflip-btn" class="btn-signin" href="#">Sign in</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <footer class="page-footer bg-gradient-strong-orange center-on-small-only footer-fixed">
+
+            <!--Footer Links-->
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <p>
+                            © 2017 Copyright: <a href="https://goohyeah.com">Goohyeah Corp</a>
+                            . All rights reserved
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline text-right">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                            <li><a href="policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Second column-->
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /Start your project here-->
+    <!-- Modal -->
+    <div class="modal fade left" id="basicExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-full-height modal-left sidenav" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">GoOhYeah</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                    <ul>
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-user"></i>
+                                Login/Signup
+                            </a>
+                        </li>
+
+                        <li class="btn-group">
+                            <a class="collapse-arrow-down" data-toggle="collapse" href="#help-nav" aria-expanded="false" aria-controls="help-nav">
+                                <i class="fa fa-question"></i>
+                                Help
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </li>
+                        <div class="collapse collapse-side-nav" id="help-nav">
+                            <ul>
+                                <li class="active">
+                                    <a href="about.html">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="terms.html">
+                                        Terms of Use
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <li class="btn-group">
+                            <a class="collapse-arrow-down" data-toggle="collapse" href="#cate-nav" aria-expanded="false" aria-controls="help-nav">
+                                <i class="fa fa-cutlery"></i>
+                                Popular Catogories
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </li>
+                        <div class="collapse collapse-side-nav" id="cate-nav">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Restaurant
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Night life
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Spa
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Soical
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Outdoor
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        BBQ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/compiled.js"></script>
+    <script src="js/jquery.flip.min.js"></script>
+    <script type="text/javascript" src="js/matchHeight/dist/jquery.matchHeight-min.js"></script>
+
+    <script>
+        //--------------------------------------------------------------
+        $(function() {
+            $("#flipper-card").flip({
+                trigger: 'manual'
+            });
+
+            $("#flip-btn").click(function(){
+                $("#flipper-card").flip(true);
+            });
+
+            $("#unflip-btn").click(function(){
+                $("#flipper-card").flip(false);
+            });
+        });
+    </script>
+</body>
+
+</html>
