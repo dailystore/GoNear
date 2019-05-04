@@ -117,289 +117,291 @@
         <div class="map-container" id="map-container" style="width:100%; height:200px">
           <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7238871785307!2d106.67297251480055!3d10.755750292335538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752efd721bfaed%3A0xadbda163cab8ce0b!2zMzM5IE5ndXnhu4VuIFRyw6NpLCBQaMaw4budbmcgNywgUXXhuq1uIDUsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1497618779364" allowfullscreen="" width="100%" height="200" frameborder="0"></iframe> -->
         </div>
+
+        <div class="container">
+          <h4 class="title-strong-pink">Fillter</h4>
+          <!-- <div class="md-form form-group">
+            <input type="search" id="form-cate-1" class="form-control mdb-autocomplete">
+            <button class="mdb-autocomplete-clear">
+              <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="https://www.w3.org/2000/svg">
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                <path d="M0 0h24v24H0z" fill="none" />
+              </svg>
+            </button>
+            <label for="form-autocomplete" class="active">Category</label>
+          </div> -->
+
+          <div class="row">
+            <div class="col-md col-6">
+              <select class="mdb-select colorful-select dropdown-primary">
+                <option value="0"> All Categories</option>
+                <option value="1" selected>Restaurants</option>
+                <option value="2">Hotels</option>
+                <option value="3">Bars</option>
+              </select>
+            </div>
+            <div class="col-md col-6">
+              <select class="mdb-select colorful-select dropdown-primary">
+                <option value="" disabled selected>Distance</option>
+                <option value="1">0 -5km</option>
+                <option value="2">5 - 10km</option>
+                <option value="3">> 10km</option>
+              </select>
+            </div>
+            <div class="col-md col-6">
+              <select class="mdb-select colorful-select dropdown-primary">
+                <option value="" disabled selected>Price</option>
+                <option value="1">Moderate</option>
+                <option value="2">Pricey</option>
+                <option value="3">High-end</option>
+              </select>
+            </div>
+            <div class="col-md col-6">
+              <select class="mdb-select colorful-select dropdown-primary">
+                <option value="" disabled selected>Feature</option>
+                <option value="1">Delivery</option>
+                <option value="2">Reservation</option>
+                <option value="3">Offer a deal</option>
+                <option value="3">Open now</option>
+              </select>
+            </div>
+            <div class="col-md col-6">
+              <select class="mdb-select colorful-select dropdown-primary">
+                <option value="" disabled selected>Sort by</option>
+                <option value="1">Best match</option>
+                <option value="2">Highest rate</option>
+                <option value="3">Most view</option>
+                <option value="3">Best price</option>
+              </select>
+            </div>
+
+          </div>
+        </div>
       </div>
 
       <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="section-filter">
-              <div class="sticky-filter">
-                <h4 class="title-strong-pink">Fillter</h4>
-                <!-- <div class="md-form form-group">
-                  <input type="search" id="form-cate-1" class="form-control mdb-autocomplete">
-                  <button class="mdb-autocomplete-clear">
-                    <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="https://www.w3.org/2000/svg">
-                      <path
-                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
-                      <path d="M0 0h24v24H0z" fill="none" />
-                    </svg>
-                  </button>
-                  <label for="form-autocomplete" class="active">Category</label>
-                </div> -->
+        <div id="list-store" class="comments-list list-store text-left">
+          <h6 class="text-right">Showing 5 of 12</h6>
+          <div class="row mb10">
+            <!--Image column-->
+            <div class="col-md-2 col-12">
+              <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+            </div>
+            <!--/.Image column-->
+            <!--Content column-->
+            <div class="col-md-10 col-12">
+              <h3 class="user-name mb0">
+                <a href="details.html" class="hover-link inline-block">
+                  Happy restaurant
+                </a>
+              </h3>
+              <div class="card-data pt0">
+                <ul>
+                  <li class="comment-date">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <strong>333 reviews</strong>
+                  </li>
+                </ul>
 
-                <select class="mdb-select colorful-select dropdown-primary">
-                  <option value="0"> All Categories</option>
-                  <option value="1" selected>Restaurants</option>
-                  <option value="2">Hotels</option>
-                  <option value="3">Bars</option>
-                </select>
+                <ul>
+                  <li>
+                    <i class="fa fa-map-marker"></i>
+                    285 Cách Mạng Tháng 8, Quận 10, Hồ Chí Minh - 090252525
+                  </li>
+                </ul>
 
-                <select class="mdb-select colorful-select dropdown-primary">
-                  <option value="" disabled selected>Distance</option>
-                  <option value="1">0 -5km</option>
-                  <option value="2">5 - 10km</option>
-                  <option value="3">> 10km</option>
-                </select>
-
-                <select class="mdb-select colorful-select dropdown-primary">
-                  <option value="" disabled selected>Price</option>
-                  <option value="1">Moderate</option>
-                  <option value="2">Pricey</option>
-                  <option value="3">High-end</option>
-                </select>
-
-                <select class="mdb-select colorful-select dropdown-primary">
-                  <option value="" disabled selected>Feature</option>
-                  <option value="1">Delivery</option>
-                  <option value="2">Reservation</option>
-                  <option value="3">Offer a deal</option>
-                  <option value="3">Open now</option>
-                </select>
-
-                <select class="mdb-select colorful-select dropdown-primary">
-                  <option value="" disabled selected>Sort by</option>
-                  <option value="1">Best match</option>
-                  <option value="2">Highest rate</option>
-                  <option value="3">Most view</option>
-                  <option value="3">Best price</option>
-                </select>
+                <ul>
+                  <li>
+                    <a href="#" class="hover-link">
+                      <i class="fa fa-home ml0 mr0"></i>
+                      www.happyrestaurant.com
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
+            <!--/.Content column-->
           </div>
-          <div class="col-lg-9">
-            <div id="list-store" class="comments-list list-store text-left">
-              <h6 class="text-right">Showing 5 of 12</h6>
-              <div class="row mb10">
-                <!--Image column-->
-                <div class="col-md-2 col-12">
-                  <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
-                </div>
-                <!--/.Image column-->
-                <!--Content column-->
-                <div class="col-md-10 col-12">
-                  <h3 class="user-name mb0">
-                    <a href="details.html" class="hover-link inline-block">
-                      Happy restaurant
+          <div class="row mb10">
+            <!--Image column-->
+            <div class="col-md-2 col-12">
+              <img src="img/sample/board_game_station.jpg">
+            </div>
+            <!--/.Image column-->
+            <!--Content column-->
+            <div class="col-md-10 col-12">
+              <h3 class="user-name mb0">
+                <a href="details.html" class="hover-link inline-block">
+                  Board Game Station
+                </a>
+              </h3>
+              <div class="card-data pt0">
+                <ul>
+                  <li class="comment-date">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <strong>222 reviews</strong>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <i class="fa fa-map-marker"></i>
+                    493 Nguyễn Tri Phương, Phường 8, Quận 10, Hồ Chí Minh - 0588149256
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <a href="#" class="hover-link">
+                      <i class="fa fa-home ml0 mr0"></i>
+                      https://www.facebook.com/pg/bgs.nguyentriphuong
                     </a>
-                  </h3>
-                  <div class="card-data pt0">
-                    <ul>
-                      <li class="comment-date">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <strong>333 reviews</strong>
-                      </li>
-                    </ul>
-
-                    <ul>
-                      <li>
-                        <i class="fa fa-map-marker"></i>
-                        285 Cách Mạng Tháng 8, Quận 10, Hồ Chí Minh - 090252525
-                      </li>
-                    </ul>
-
-                    <ul>
-                      <li>
-                        <a href="#" class="hover-link">
-                          <i class="fa fa-home ml0 mr0"></i>
-                          www.happyrestaurant.com
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!--/.Content column-->
-              </div>
-              <div class="row mb10">
-                <!--Image column-->
-                <div class="col-md-2 col-12">
-                  <img src="img/sample/board_game_station.jpg">
-                </div>
-                <!--/.Image column-->
-                <!--Content column-->
-                <div class="col-md-10 col-12">
-                  <h3 class="user-name mb0">
-                    <a href="details.html" class="hover-link inline-block">
-                      Board Game Station
-                    </a>
-                  </h3>
-                  <div class="card-data pt0">
-                    <ul>
-                      <li class="comment-date">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <strong>222 reviews</strong>
-                      </li>
-                    </ul>
-
-                    <ul>
-                      <li>
-                        <i class="fa fa-map-marker"></i>
-                        493 Nguyễn Tri Phương, Phường 8, Quận 10, Hồ Chí Minh - 0588149256
-                      </li>
-                    </ul>
-
-                    <ul>
-                      <li>
-                        <a href="#" class="hover-link">
-                          <i class="fa fa-home ml0 mr0"></i>
-                          https://www.facebook.com/pg/bgs.nguyentriphuong
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!--/.Content column-->
-              </div>
-              <div class="row mb10">
-                <!--Image column-->
-                <div class="col-md-2 col-12">
-                  <img src="img/sample/union_jack.jpg">
-                </div>
-                <!--/.Image column-->
-                <!--Content column-->
-                <div class="col-md-10 col-12">
-                  <h3 class="user-name mb0">
-                    <a href="details.html" class="hover-link inline-block">
-                      Union Jack's Fish & Chips
-                    </a>
-                  </h3>
-                  <div class="card-data pt0">
-                    <ul>
-                      <li class="comment-date">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-full"></i>
-                        <strong>408 reviews</strong>
-                      </li>
-                    </ul>
-
-                    <ul>
-                      <li>
-                        <i class="fa fa-map-marker"></i>
-                        130-1 Tôn Thất Đạm, Bến Nghé, Quận 1, Hồ Chí Minh - 0326911720
-                      </li>
-                    </ul>
-
-                    <ul>
-                      <li>
-                        <a href="#" class="hover-link">
-                          <i class="fa fa-home ml0 mr0"></i>
-                          http://www.union-jacks.co/
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!--/.Content column-->
-              </div>
-              <div class="row mb10">
-                <!--Image column-->
-                <div class="col-md-2 col-12">
-                  <img src="img/sample/indika_saigon.jpg">
-                </div>
-                <!--/.Image column-->
-                <!--Content column-->
-                <div class="col-md-10 col-12">
-                  <h3 class="user-name mb0">
-                    <a href="details.html" class="hover-link inline-block">
-                      Indika Saigon (House of Curiosity)
-                    </a>
-                  </h3>
-                  <div class="card-data pt0">
-                    <ul>
-                      <li class="comment-date">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-full"></i>
-                        <strong>366 reviews</strong>
-                      </li>
-                    </ul>
-
-                    <ul>
-                      <li>
-                        <i class="fa fa-map-marker"></i>
-                        43 Nguyễn Văn Giai, Đa Kao, Quận 1, Hồ Chí Minh - 0356581648
-                      </li>
-                    </ul>
-
-                    <ul>
-                      <li>
-                        <a href="#" class="hover-link">
-                          <i class="fa fa-home ml0 mr0"></i>
-                          https://www.facebook.com/pg/IndikaSaigon/
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!--/.Content column-->
-              </div>
-              <div class="row mb10">
-                <!--Image column-->
-                <div class="col-md-2 col-12">
-                  <img src="img/sample/adina_studio.jpg">
-                </div>
-                <!--/.Image column-->
-                <!--Content column-->
-                <div class="col-md-10 col-12">
-                  <h3 class="user-name mb0">
-                    <a href="details.html" class="hover-link inline-block">
-                      Adina Art Studio
-                    </a>
-                  </h3>
-                  <div class="card-data pt0">
-                    <ul>
-                      <li class="comment-date">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-full"></i>
-                        <strong>936 reviews</strong>
-                      </li>
-                    </ul>
-
-                    <ul>
-                      <li>
-                        <i class="fa fa-map-marker"></i>
-                        1 Nguyễn Văn Linh, Tân Phong, Quận 7, Tân Phong Quận 7 Hồ Chí Minh
-                      </li>
-                    </ul>
-
-                    <ul>
-                      <li>
-                        <a href="#" class="hover-link">
-                          <i class="fa fa-home ml0 mr0"></i>
-                          https://www.instagram.com/petit_bones
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!--/.Content column-->
+                  </li>
+                </ul>
               </div>
             </div>
+            <!--/.Content column-->
+          </div>
+          <div class="row mb10">
+            <!--Image column-->
+            <div class="col-md-2 col-12">
+              <img src="img/sample/union_jack.jpg">
+            </div>
+            <!--/.Image column-->
+            <!--Content column-->
+            <div class="col-md-10 col-12">
+              <h3 class="user-name mb0">
+                <a href="details.html" class="hover-link inline-block">
+                  Union Jack's Fish & Chips
+                </a>
+              </h3>
+              <div class="card-data pt0">
+                <ul>
+                  <li class="comment-date">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>
+                    <strong>408 reviews</strong>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <i class="fa fa-map-marker"></i>
+                    130-1 Tôn Thất Đạm, Bến Nghé, Quận 1, Hồ Chí Minh - 0326911720
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <a href="#" class="hover-link">
+                      <i class="fa fa-home ml0 mr0"></i>
+                      http://www.union-jacks.co/
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--/.Content column-->
+          </div>
+          <div class="row mb10">
+            <!--Image column-->
+            <div class="col-md-2 col-12">
+              <img src="img/sample/indika_saigon.jpg">
+            </div>
+            <!--/.Image column-->
+            <!--Content column-->
+            <div class="col-md-10 col-12">
+              <h3 class="user-name mb0">
+                <a href="details.html" class="hover-link inline-block">
+                  Indika Saigon (House of Curiosity)
+                </a>
+              </h3>
+              <div class="card-data pt0">
+                <ul>
+                  <li class="comment-date">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>
+                    <strong>366 reviews</strong>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <i class="fa fa-map-marker"></i>
+                    43 Nguyễn Văn Giai, Đa Kao, Quận 1, Hồ Chí Minh - 0356581648
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <a href="#" class="hover-link">
+                      <i class="fa fa-home ml0 mr0"></i>
+                      https://www.facebook.com/pg/IndikaSaigon/
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--/.Content column-->
+          </div>
+          <div class="row mb10">
+            <!--Image column-->
+            <div class="col-md-2 col-12">
+              <img src="img/sample/adina_studio.jpg">
+            </div>
+            <!--/.Image column-->
+            <!--Content column-->
+            <div class="col-md-10 col-12">
+              <h3 class="user-name mb0">
+                <a href="details.html" class="hover-link inline-block">
+                  Adina Art Studio
+                </a>
+              </h3>
+              <div class="card-data pt0">
+                <ul>
+                  <li class="comment-date">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>
+                    <strong>936 reviews</strong>
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <i class="fa fa-map-marker"></i>
+                    1 Nguyễn Văn Linh, Tân Phong, Quận 7, Tân Phong Quận 7 Hồ Chí Minh
+                  </li>
+                </ul>
+
+                <ul>
+                  <li>
+                    <a href="#" class="hover-link">
+                      <i class="fa fa-home ml0 mr0"></i>
+                      https://www.instagram.com/petit_bones
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--/.Content column-->
           </div>
         </div>
       </div>
