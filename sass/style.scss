@@ -655,11 +655,31 @@ $i: 0;
 .list-store {
   margin-top: 50px;
 
-  img {
-    max-width: 80px;
+  .item {
+    padding: 0;
+  }
+
+  .card {
+    .card-body {
+      padding: .5rem 1rem !important;
+    }
+
+    .card-data {
+      text-align: left;
+      color: #333;
+      background-color: #fff;
+
+      .fa {
+        display: inline;
+        color: #F35569 !important;
+      }
+    }
   }
 
   .user-name {
+    padding: 0 !important;
+    margin-bottom: .3rem;
+
     a {
       font-size: 20px;
     }
@@ -673,7 +693,11 @@ $i: 0;
 }
 
 .stick-active {
-  margin-top: 310px;
+  margin-top: 400px;
+
+  @media (max-width: 767px) {
+    margin-top: 540px;
+  }
 }
 
 .section-filter {
@@ -1325,4 +1349,43 @@ hr.hr-style-gradient {
   background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+
+/* The Masonry Container */
+.masonry {
+  column-gap: 1.5em;
+}
+
+/* The Masonry Brick */
+.item {
+  background: #fff;
+  padding: 1em;
+  margin: 0 0 1.5em;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 1;
+  }
+}
+.item { /* Masonry bricks or child elements */
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
 }
