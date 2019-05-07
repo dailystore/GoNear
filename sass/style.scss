@@ -1400,3 +1400,42 @@ hr.hr-style-gradient {
     }
   }
 }
+
+.section-business-categories {
+  padding-top: 40px;
+
+  a {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333 !important;
+
+    &:hover,
+    &:focus {
+      opacity: .7;
+    }
+
+    small {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .fas {
+      font-size: 60px;
+      color: #ff7043;
+    }
+  }
+}
+
+#category-more {
+  padding-top: 40px;
+  border-top: 1px solid #999;
+
+  ul {
+    > li {
+      > a {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}
