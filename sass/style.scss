@@ -1439,3 +1439,27 @@ hr.hr-style-gradient {
     }
   }
 }
+
+.container-list-page {
+  max-width: none !important;
+}
+
+#content{
+  padding: 18px;
+  margin-right: 315px;
+}
+
+#sidebar{
+  float: right;
+  width: 300px;
+  color: #ffbdbd;
+  will-change: min-height;
+}
+
+#sidebar .sidebar__inner{
+  padding: 10px;
+  position: relative;
+  transform: translate(0, 0);
+  transform: translate3d(0, 0, 0);
+  will-change: position, transform;
+}
