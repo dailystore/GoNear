@@ -123,7 +123,8 @@
             </h2>
 
             <div class="container-filter">
-              <button class="btn btn-orange">
+              <button class="btn btn-orange" data-toggle="collapse" data-target="#filter-details"
+                      aria-expanded="false">
                 <i class="fas fa-sliders-h"></i>
                 Filter
               </button>
@@ -146,7 +147,7 @@
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-orange form-check-label">
                   <input class="form-check-input" type="checkbox" autocomplete="off">
-                  <i class="fas fa-clock-o"></i>
+                  <i class="fas fa-clock-o mr-1"></i>
                   Open now
                 </label>
               </div>
@@ -155,7 +156,7 @@
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-orange form-check-label">
                   <input class="form-check-input" type="checkbox" autocomplete="off">
-                  <i class="fas fa-truck"></i>
+                  <i class="fas fa-truck mr-1"></i>
                   Delivery
                 </label>
               </div>
@@ -163,7 +164,7 @@
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-orange form-check-label">
                   <input class="form-check-input" type="checkbox" autocomplete="off">
-                  <i class="fas fa-shopping-bag"></i>
+                  <i class="fas fa-shopping-bag mr-1"></i>
                   Takeout
                 </label>
               </div>
@@ -171,12 +172,169 @@
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-orange form-check-label">
                   <input class="form-check-input" type="checkbox" autocomplete="off">
-                  <i class="fas fa-hourglass-end"></i>
+                  <i class="fas fa-hourglass-end mr-1"></i>
                   Waitlist
                 </label>
               </div>
 
 
+            </div>
+
+            <div class="collapse" id="filter-details">
+              <div class="container-all-filter">
+                <div class="row">
+                  <div class="col-md col-sm-2">
+                    <p class="title-strong-orange fs-4 mb-1">
+                      Sort by
+                    </p>
+
+                    <ul>
+                      <li>
+                        <a href="#">
+                          Recommendation
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Highest rated
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Most reviewed
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md col-sm-2">
+                    <p class="title-strong-orange fs-4 mb-1">
+                      Neighborhoods
+                    </p>
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="place-1">
+                      <label class="form-check-label" for="place-1">Outer Sunset</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="place-2">
+                      <label class="form-check-label" for="place-2">Outer Sunset</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="place-3">
+                      <label class="form-check-label" for="place-3">Outer Sunset</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="place-4">
+                      <label class="form-check-label" for="place-4">Outer Sunset</label>
+                    </div>
+                  </div>
+                  <div class="col-md col-sm-2">
+                    <p class="title-strong-orange fs-4 mb-1">
+                      Distance
+                    </p>
+
+                    <ul>
+                      <li>
+                        <a href="#">
+                          Bird's-eye View
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Driving (5 mi.)
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Biking (2 mi.)
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Walking (1 mi.)
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Within 4 blocks
+                        </a>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="col-md col-sm-2">
+                    <p class="title-strong-orange fs-4 mb-1">
+                      Price
+                    </p>
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="price-1">
+                      <label class="form-check-label" for="price-1">$</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="price-2">
+                      <label class="form-check-label" for="price-2">$$</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="price-3">
+                      <label class="form-check-label" for="price-3">$$$</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="price-4">
+                      <label class="form-check-label" for="price-4">$$$$</label>
+                    </div>
+                  </div>
+                  <div class="col-md col-sm-2">
+                    <p class="title-strong-orange fs-4 mb-1">
+                      Features
+                    </p>
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="delivery">
+                      <label class="form-check-label" for="delivery">
+                        <i class="fas fa-truck mr-1 orange-text"></i>
+                        Delivery
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="takeout">
+                      <label class="form-check-label" for="takeout">
+                        <i class="fas fa-shopping-bag mr-1 orange-text"></i>
+                        Takeout
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="waitlist">
+                      <label class="form-check-label" for="waitlist">
+                        <i class="fas fa-hourglass-end mr-1 orange-text"></i>
+                        Waitlist
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="offer-deal">
+                      <label class="form-check-label" for="offer-deal">
+                        <i class="fas fa-tag mr-1 orange-text"></i>
+                        Offering a deal
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
 
@@ -406,6 +564,7 @@
 
             </div>
           </div>
+
         </div>
       </div>
 
