@@ -15,7 +15,7 @@
   <link href="css/jquery-comments.css" rel="stylesheet">
   <link href="components/swiper/dist/css/swiper.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
-  <script src="https://use.fontawesome.com/02a2437bce.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <style>
     .stick-map-up {
@@ -122,49 +122,60 @@
               Restaurant in Texas
             </h2>
 
-            <div class="row">
-              <div class="col-md col-6">
-                <select class="mdb-select colorful-select dropdown-primary">
-                  <option value="0"> All Categories</option>
-                  <option value="1" selected>Restaurants</option>
-                  <option value="2">Hotels</option>
-                  <option value="3">Bars</option>
-                </select>
+            <div class="container-filter">
+              <button class="btn btn-orange">
+                <i class="fas fa-sliders-h"></i>
+                Filter
+              </button>
+
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-orange form-check-label">
+                  <input class="form-check-input" type="checkbox" autocomplete="off"> $
+                </label>
+                <label class="btn btn-orange form-check-label">
+                  <input class="form-check-input" type="checkbox" autocomplete="off"> $$
+                </label>
+                <label class="btn btn-orange form-check-label">
+                  <input class="form-check-input" type="checkbox" autocomplete="off"> $$$
+                </label>
+                <label class="btn btn-orange form-check-label">
+                  <input class="form-check-input" type="checkbox" autocomplete="off"> $$$$
+                </label>
               </div>
-              <div class="col-md col-6">
-                <select class="mdb-select colorful-select dropdown-primary">
-                  <option value="" disabled selected>Distance</option>
-                  <option value="1">0 -5km</option>
-                  <option value="2">5 - 10km</option>
-                  <option value="3">> 10km</option>
-                </select>
+
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-orange form-check-label">
+                  <input class="form-check-input" type="checkbox" autocomplete="off">
+                  <i class="fas fa-clock-o"></i>
+                  Open now
+                </label>
               </div>
-              <div class="col-md col-6">
-                <select class="mdb-select colorful-select dropdown-primary">
-                  <option value="" disabled selected>Price</option>
-                  <option value="1">Moderate</option>
-                  <option value="2">Pricey</option>
-                  <option value="3">High-end</option>
-                </select>
+
+
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-orange form-check-label">
+                  <input class="form-check-input" type="checkbox" autocomplete="off">
+                  <i class="fas fa-truck"></i>
+                  Delivery
+                </label>
               </div>
-              <div class="col-md col-6">
-                <select class="mdb-select colorful-select dropdown-primary">
-                  <option value="" disabled selected>Feature</option>
-                  <option value="1">Delivery</option>
-                  <option value="2">Reservation</option>
-                  <option value="3">Offer a deal</option>
-                  <option value="3">Open now</option>
-                </select>
+
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-orange form-check-label">
+                  <input class="form-check-input" type="checkbox" autocomplete="off">
+                  <i class="fas fa-shopping-bag"></i>
+                  Takeout
+                </label>
               </div>
-              <div class="col-md col-6">
-                <select class="mdb-select colorful-select dropdown-primary">
-                  <option value="" disabled selected>Sort by</option>
-                  <option value="1">Best match</option>
-                  <option value="2">Highest rate</option>
-                  <option value="3">Most view</option>
-                  <option value="3">Best price</option>
-                </select>
+
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-orange form-check-label">
+                  <input class="form-check-input" type="checkbox" autocomplete="off">
+                  <i class="fas fa-hourglass-end"></i>
+                  Waitlist
+                </label>
               </div>
+
 
             </div>
 
