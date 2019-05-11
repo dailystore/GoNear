@@ -1405,13 +1405,16 @@ hr.hr-style-gradient {
   padding-top: 40px;
 
   a {
+    padding: 8px 15px;
     margin-bottom: 20px;
     font-size: 20px;
     color: #333 !important;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.3s ease, opacity 0.3s ease, border 0.3s ease, padding 0.3s ease, left 0.3s ease, bottom 0.3s ease, box-shadow 0.3s ease;
 
     &:hover,
     &:focus {
-      opacity: .7;
+      transform: translateY(-3px);
+      box-shadow: 0 3px 18px 3px rgba(0, 0, 0, .08);
     }
 
     small {
