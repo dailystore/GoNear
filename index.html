@@ -20,7 +20,47 @@
   <link href="css/jquery-comments.css" rel="stylesheet">
   <link href="components/swiper/dist/css/swiper.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/02a2437bce.js"></script>
+  <style>
+    .icon_svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      fill: inherit;
+      display: block;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .icon {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      top: -.1em;
+      fill: #666;
+      overflow: hidden;
+    }
+
+    .dropdown_arrow {
+      left: -18px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .list-inline>li>a {
+      padding-left: 0px;
+    }
+
+    .slogan {
+      color: grey;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+  </style>
 </head>
 
 <body>
@@ -38,7 +78,7 @@
             <li class="nav-item">
               <a href="page-login.html" class="nav-link waves-effect waves-light">
                 <i class="fa fa-user"></i>
-                Login/Sign-up
+                Login
               </a>
             </li>
           </ul>
@@ -85,6 +125,7 @@
       <h1 class="doodle-logo">
         <img src="img/common/doodle-sm.gif" class="img-fluid mx-auto d-block" alt="GoOhYeah">
       </h1>
+      <h6 class="slogan">Connecting Communities <br> Sharing Services</h6>
       <form action="" autocomplete="on">
         <div class="row">
           <div id="store" class="col-md-5">
@@ -208,390 +249,94 @@
         </div>
       </form>
 
-      <ul class="list-inline list-inline-category">
+      <ul class="list-inline list-addon-services hidden-767">
         <li>
-          <a href="#">
+          <img src="img/icon/restaurant.png" alt="" width="20" class="inline-block" />
+          <a href="javascript:void();">
             Restaurants
           </a>
         </li>
-
         <li>
-          <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Home Services <span class="fa fa-caret-down"></span>
-          </a>
-
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-          </div>
-        </li>
-
-        <li>
-          <a href="#">
-            Movers
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            Bars
-          </a>
-        </li>
-      </ul>
-
-      <!--<ul class="list-inline list-addon-services hidden-767">
-        <li>
-          <a href="#">
-            <img src="img/icon/restaurant.png" alt=""class="inline-block" />
-            Restaurant
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/icon/bar.png" alt=""class="inline-block" />
+          <img src="img/icon/bar.png" alt="" width="20" class="inline-block" />
+          <a href="javascript:void();">
             Nightlife
           </a>
         </li>
         <li>
-          <a href="#">
-            <img src="img/icon/shopping.png" alt=""class="inline-block" />
+          <img src="img/icon/shopping.png" alt="" width="20" class="inline-block" />
+          <a href="javascript:void();">
             Shopping
           </a>
-        </li>-->
-
-        <!-- Some more: Home services (cleaning, furniture, ...), automotive, beauty & spa (tatoo, ...),
-          nightlife, shopping, active life, restaurants -->
+        </li>
+        <li>
+          <img src="img/icon/beauty-salon.png" alt="" width="20" class="inline-block" />
+          <a href="javascript:void();">
+            Beauty & Spa
+          </a>
+        </li>
         <!-- <li>
           <a href="#">
-            <img src="img/icon/supermarket.png" alt=""class="inline-block" />
-            Supermarket
-          </a>
-        </li> -->
-        <!-- <li>
-          <a href="#">
-            <img src="img/icon/marketplace.png" alt=""class="inline-block" />
-            Convenience store
-          </a>
-        </li> -->
-      </ul>
-
-      <div class="section-business-categories text-center">
-        <div class="container">
-          <div class="row justify-content-md-center">
-            <div class="col-6 col-sm-3">
-              <a href="#" class="d-inline-block">
-                <i class="fas fa-utensils"></i>
-                <small class="d-block">
-                  Restaurant
-                </small>
-              </a>
-            </div>
-            <div class="col-6 col-sm-3">
-              <a href="#" class="d-inline-block">
-                <i class="fas fa-shopping-basket"></i>
-                <small class="d-block">
-                  Shopping
-                </small>
-              </a>
-            </div>
-            <div class="col-6 col-sm-3">
-              <a href="#" class="d-inline-block">
-                <i class="fas fa-wine-glass-alt"></i>
-                <small class="d-block">
-                  Nightlife
-                </small>
-              </a>
-            </div>
-            <div class="col-6 col-sm-3">
-              <a href="#" class="d-inline-block">
-                <i class="fas fa-snowboarding"></i>
-
-                <small class="d-block">
-                  Active Life
-                </small>
-              </a>
-            </div>
-
-
-            <div class="col-6 col-sm-3">
-              <a href="#" class="d-inline-block">
-                <i class="fas fa-hot-tub"></i>
-                <small class="d-block">
-                  Beauty & Spas
-                </small>
-              </a>
-            </div>
-            <div class="col-6 col-sm-3">
-              <a href="#" class="d-inline-block">
-                <i class="fas fa-car"></i>
-                <small class="d-block">
-                  Automotive
-                </small>
-              </a>
-            </div>
-            <div class="col-6 col-sm-3">
-              <a href="#" class="d-inline-block">
-                <i class="fas fa-wrench"></i>
-                <small class="d-block">
-                  Home Services
-                </small>
-              </a>
-            </div>
-            <div class="col-6 col-sm-3">
-              <a href="#category-more" class="d-inline-block"  data-toggle="collapse" aria-expanded="false" aria-controls="category-more">
-                <i class="fas fa-ellipsis-h"></i>
-                <small class="d-block">
-                  More
-                </small>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="category-more" class="collapse">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-3">
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-coffee"></i>
-                    Coffee & tee
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i class="fas fa-briefcase"></i>
-                    Professional Services
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i class="fas fa-key"></i>
-                    Local Services
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i class="fas fa-book"></i>
-                    Education
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-
-            <div class="col-12 col-md-3">
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-utensils"></i>
-                    Food
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i class="fas fa-dog"></i>
-                    Pets
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i class="fas fa-calendar-week"></i>
-                    Event Planning & Services
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i class="fas fa-church"></i>
-                    Religious Organizations
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-12 col-md-3">
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-paint-brush"></i>
-                    Arts & Entertainment
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i class="fas fa-house-damage"></i>
-                    Real Estate
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i class="fas fa-building"></i>
-                    Public Services & Government
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i class="fas fa-star"></i>
-                    Local Flavor
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-
-            <div class="col-12 col-md-3">
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fas fa-notes-medical"></i>
-                    Health & Medical
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i class="fas fa-hotel"></i>
-                    Hotels & Travel
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i class="fas fa-money-check-alt"></i>
-                    Financial Services
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#">
-                    <i class="fas fa-tv"></i>
-                    Mass Media
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--<ul class="list-inline list-addon-services hidden-767">
-        &lt;!&ndash; <li>
-          <a href="#">
-            <img src="img/icon/physician.png" alt=""class="inline-block" />
-            Physician
-          </a>
-        </li> &ndash;&gt;
-        <li>
-          <a href="#">
-            <img src="img/icon/dentis.png" alt=""class="inline-block" />
-            Restaurant
-          </a>
-        </li>
-        &lt;!&ndash; <li>
-          <a href="#">
-            <img src="img/icon/pharmacy.png" alt=""class="inline-block" />
-            Pharmacy
-          </a>
-        </li> &ndash;&gt;
-        <li>
-          <a href="#">
-            <img src="img/icon/beauty-salon.png" alt=""class="inline-block" />
-            Beauty Salon
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/icon/massage.png" alt=""class="inline-block" />
-            Massage Theraphy
-          </a>
-        </li>
-      </ul>
-
-      <ul class="list-inline list-addon-services hidden-767">
-        &lt;!&ndash; <li>
-          <a href="#">
-            <img src="img/icon/realtor.png" alt=""class="inline-block" />
-            Realtor
-          </a>
-        </li> &ndash;&gt;
-        <li>
-          <a href="#">
-            <img src="img/icon/autoshop.png" alt=""class="inline-block" />
-            Auto Shop
-          </a>
-        </li>
-        &lt;!&ndash; <li>
-          <a href="#">
-            <img src="img/icon/judge.png" alt=""class="inline-block" />
-            Attorney
-          </a>
-        </li> &ndash;&gt;
-        <li>
-          <a href="#">
-            <img src="img/icon/child.png" alt=""class="inline-block" />
-            Child Care
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/icon/gas-station.png" alt=""class="inline-block" />
+            <img src="img/icon/gas-station.png" alt="" width="20" class="inline-block" />
             Gas Station
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/icon/atm.png" alt=""class="inline-block" />
-            ATMs
+            <img src="img/icon/atm.png" alt="" width="20" class="inline-block" />
+            ATM
           </a>
         </li>
+        <li>
+          <a href="#">
+            <img src="img/icon/delivery.png" alt="" width="20" class="inline-block" />
+            Mover
+          </a>
+        </li> -->
+        <li>
+          <img src="img/icon/local_service.png" alt="" width="20" class="inline-block" />
+          <a href="javascript:void();">
+            Local Services
+          </a>
+          <span aria-hidden="true" style="width: 14px; height: 14px;"
+            class="icon u-triangle-direction-down dropdown_arrow">
+            <!-- <svg role="img" class="icon_svg">
+              <use xlink:href="#14x14_triangle_down"></use>
+            </svg> -->
+            <svg class="icon_svg" id="14x14_triangle_down" height="100%" viewBox="0 0 14 14" width="100%">
+              <path d="M7 9L3.5 5h7L7 9z"></path>
+            </svg>
+          </span>
+        </li>
+        <!-- <li>
+          <a href="#">
+            <img src="img/icon/service.png" alt="" width="20" class="inline-block" />
+            Home Services
+          </a>
+        </li> -->
+
+        <!-- Some more: Home services (cleaning, furniture, ...), automotive, beauty & spa (tatoo, ...),
+          nightlife, shopping, active life, restaurants -->
       </ul>
 
       <ul class="list-inline list-addon-services hidden-767">
-        <li>
+
+      </ul>
+
+      <ul class="list-inline list-addon-services hidden-767">
+
+        <!-- <li>
           <a href="#">
-            <img src="img/icon/delivery.png" alt=""class="inline-block" />
-            Delivery
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/icon/service.png" alt=""class="inline-block" />
-            Services
-          </a>
-        </li>
-        &lt;!&ndash; <li>
-          <a href="#">
-            <img src="img/icon/marketplace.png" alt=""class="inline-block" />
+            <img src="img/icon/marketplace.png" alt="" width="20" class="inline-block" />
             Marketplace
           </a>
-        </li> &ndash;&gt;
-        <li>
+        </li> -->
+        <!-- <li>
           <a href="#">
-            <img src="img/icon/event.png" alt=""class="inline-block" />
-            Local Events
-          </a>
-        </li>
-        &lt;!&ndash; <li>
-          <a href="#">
-            <img src="img/icon/money-box.png" alt=""class="inline-block" />
+            <img src="img/icon/money-box.png" alt="" width="20" class="inline-block" />
             Fundraisers
           </a>
-        </li> &ndash;&gt;
-      </ul>-->
+        </li> -->
+      </ul>
     </div>
     <footer class="page-footer bg-gradient-strong-orange center-on-small-only">
 
