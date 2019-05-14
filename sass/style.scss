@@ -1499,3 +1499,12 @@ hr.hr-style-gradient {
 .md-form .prefix.active {
   color: #e03636;
 }
+
+.btn-light-orange {
+  background-color: #ff7b34;
+  color: #fff;
+
+  &.active {
+    background-color: #e00808;
+  }
+}
