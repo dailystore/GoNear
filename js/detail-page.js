@@ -473,28 +473,19 @@ $(function() {
     // $('.r-more-btn').click(ReadMoreClick);
     parent.find('.card-header').click(ReadMoreClick);
 
+
     var swiper = new Swiper('.swiper-container', {
-        effect: 'coverflow',
         loop: true,
         centeredSlides: true,
-        slidesPerView: 3,
-        initialSlide: 3,
+        slidesPerView: 1,
+        initialSlide: 1,
         keyboardControl: true,
         mousewheelControl: false,
-        lazyLoading: true,
         preventClicks: false,
         preventClicksPropagation: false,
-        lazyLoadingInPrevNext: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         slideToClickedSlide: true,
-        coverflow: {
-            rotate: 0,
-            stretch: 0,
-            depth: 250,
-            modifier: 1,
-            slideShadows: false,
-        },
         breakpoints: {
             767: {
                 slidesPerView: 1,
