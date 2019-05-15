@@ -1132,18 +1132,17 @@
 
       var sidebar = document.getElementById('sidebar');
 
-      var stickySidebar = new StickySidebar(sidebar);
 
       sidebar.addEventListener('affix.top.stickySidebar', function () {
-          $( "#content" ).addClass( "content-when-sticky" );
+          $( ".container-list-page" ).addClass( "content-when-sticky" );
       });
 
       sidebar.addEventListener('affixed.top.stickySidebar', function () {
-          $( "#content" ).addClass( "content-when-sticky" );
+          $( ".container-list-page" ).addClass( "content-when-sticky" );
       });
 
       sidebar.addEventListener('affixed.static.stickySidebar', function () {
-          $( "#content" ).removeClass( "content-when-sticky" );
+          $( ".container-list-page" ).removeClass( "content-when-sticky" );
       });
     </script>
 </body>
