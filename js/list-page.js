@@ -99,3 +99,39 @@ $(function () {
     initMap(aData);
   }
 });
+
+
+var isMobile = false;
+
+$(function () {
+  var breakpoint = 992;
+  updateIsMobile();
+
+  $(window).on('resize load', function () {
+    updateIsMobile()
+  });
+
+  function updateIsMobile() {
+    isMobile = $(window).width() < breakpoint;
+  }
+});
+
+
+function sticktothetop() {
+  if (isMobile) {
+    var window_top = $(window).scrollTop();
+    var top = $('#stick-here').offset().top;
+    
+    if (window_top > top) {
+      $('.sidebar__inner').addClass('stick');
+      $('#stick-here').height($('.sidebar__inner').outerHeight());
+    } else {
+      $('.sidebar__inner').removeClass('stick');
+      $('#stick-here').height(0);
+    }
+  }
+}
+$(function() {
+  $(window).scroll(sticktothetop);
+  sticktothetop();
+});
