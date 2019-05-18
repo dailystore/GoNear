@@ -1449,15 +1449,15 @@ hr.hr-style-gradient {
 
 #content{
   padding: 18px;
-  margin-left: 315px;
+  margin-right: 315px;
 
   @media (max-width: 991px) {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 #sidebar{
-  float: left;
+  float: right;
   width: 300px;
   color: #ffbdbd;
   will-change: min-height;
