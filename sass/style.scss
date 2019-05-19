@@ -1529,3 +1529,46 @@ hr.hr-style-gradient {
     background-color: #e00808;
   }
 }
+
+.container-filter {
+  .btn-group {
+    margin-bottom: 20px;
+  }
+}
+
+.nav-category {
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+  background-color: #eee;
+
+  .dropdown-menu {
+    width: 250px;
+  }
+
+  .navbar-brand {
+    display: none;
+
+    @media (max-width: 991px) {
+      display: block;
+      padding: 15px;
+    }
+  }
+
+  .navbar-nav {
+    > li {
+      > a {
+        @media (min-width: 992px) {
+          border-right: 1px solid #ddd;
+        }
+      }
+
+      &:first-child {
+        > a {
+          @media (min-width: 992px) {
+            border-left: 1px solid #ddd;
+          }
+        }
+      }
+    }
+  }
+}
