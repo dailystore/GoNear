@@ -261,7 +261,7 @@ $(document).ready(function () {
       // xhttp.setRequestHeader("Authorization", window.localStorage.getItem("candy"));
       xhttp.send();
     } else {
-      window.location.href = "list.html?swlon=-117.2824&swlat=32.5348&nelon=-116.9058&nelat=33.1142&loc=San%20Diego&txt=" + sName;
+      window.location.href = "list-bk.html?swlon=-117.2824&swlat=32.5348&nelon=-116.9058&nelat=33.1142&loc=San%20Diego&txt=" + sName;
     }
   });
 
