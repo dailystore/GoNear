@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Setting | GoOhYeah</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Material Design Bootstrap -->
+        <link href="css/compiled.css" rel="stylesheet">
+        <!-- Your custom styles (optional) -->
+        <link href="css/mdb.css" rel="stylesheet">
+        <link href="css/jquery-comments.css" rel="stylesheet">
+        <link href="components/swiper/dist/css/swiper.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
+        <script src="https://use.fontawesome.com/02a2437bce.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Start your project here-->
+        <div style="height: 100vh">
+
+
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-strong-orange">
+                <div class="container">
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="modal" data-target="#basicExample" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="index-login.html">
+                        <img class="img-fluid" src="img/common/logo.png" alt="GoOhYeah"/>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarNav1">
+                        <ul class="navbar-nav ml-auto"></ul>
+                        <ul class="navbar-nav ml-auto nav-flex-icons">
+                            <li class="nav-item avatar dropdown">
+                                <a class="nav-link dropdown-toggle waves-effect waves-light" href="#" id="user-avatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="http://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="img-fluid rounded-circle z-depth-0"></a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-avatar" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                    <h6 class="dropdown-header">Welcome Helly</h6>
+                                    <a class="dropdown-item waves-effect waves-light" href="setting.html">
+                                        <i class="fa fa-cog"></i>
+                                        Setting
+                                    </a>
+
+                                    <a class="dropdown-item waves-effect waves-light" href="index.html">
+                                        <i class="fa fa-sign-out"></i>
+                                        Sign out
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container-all pb100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div id="side-stick" class="list-group sidebar-orange nav-tab-orange">
+                                <ul role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#profile" role="tab">
+                                            Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#account" role="tab">
+                                            Account
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#address" role="tab">
+                                            Address
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- Nav tabs -->
+                            <!-- Tab panels -->
+                            <div class="tab-content">
+                                <!--Panel 1-->
+                                <div class="tab-pane fade in show active" id="profile" role="tabpanel">
+                                    <h2 class="title-strong-orange h2-responsive">
+                                        Profile setting
+                                    </h2>
+                                    <form id="explorer-profile-form" action="" method="post">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="md-form">
+                                                    <strong class="text-red fs16">First name</strong>
+                                                    <input type="text" id="first_name" name="first_name" value="Kelly" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="md-form">
+                                                    <strong class="text-red fs16">Last name</strong>
+                                                    <input type="text" id="last_name" name="last_name" value="Martin" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="md-form">
+                                            <strong class="text-red fs16">Gender</strong>
+                                            <select class="mdb-select" id="gender" name="gender">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                                <option>Unset</option>
+                                            </select>
+                                        </div>
+
+
+                                        <div class="md-form">
+                                            <strong class="text-red fs16">Birthday</strong>
+                                            <input placeholder="Selected date" type="text" id="birthday" class="form-control datepicker">
+                                        </div>
+
+                                        <div class="md-form">
+                                            <strong class="text-red fs16">Phone</strong>
+                                            <input type="number" id="phone" name="phone" value="01203023847" class="form-control">
+                                        </div>
+
+                                        <div class="md-form">
+                                            <strong class="text-red fs16" class="text-red fs16">Marriage status</strong>
+                                            <select id="marriage_status" class="mdb-select" name="marriage_status">
+                                                <option>Married</option>
+                                                <option>Single</option>
+                                                <option>Divorced</option>
+                                                <option>Widowed</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="md-form">
+                                                    <strong class="text-red fs16">Facebook account</strong>
+                                                    <input type="text" id="fb_acc" name="fb_acc" value="mattin123" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="md-form">
+                                                    <strong class="text-red fs16">Skype account</strong>
+                                                    <input type="text" id="skype_acc" name="skype_acc" value="mattin123" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="md-form">
+                                                    <strong class="text-red fs16">Yahoo account</strong>
+                                                    <input type="text" id="yahoo_acc" name="yahoo_acc" value="mattin123" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="md-form">
+                                            <strong class="text-red fs16">Personal note</strong>
+                                            <textarea class="form-control height-auto" id="personal_note" name="personal-note" rows="10"></textarea>
+                                        </div>
+
+                                        <div class="md-form text-center">
+                                            <button type="submit" class="btn btn-lg btn-strong-orange waves-effect waves-light" >
+                                                Save changes
+                                            </button>
+                                            <button type="reset" class="btn btn-lg btn-orange waves-effect waves-light" >
+                                                Reset
+                                            </button>
+
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <!--/.Panel 1-->
+                                <!--Panel 2-->
+                                <div class="tab-pane fade" id="account" role="tabpanel">
+                                    <h2 class="title-strong-orange h2-responsive">
+                                        Account setting
+                                    </h2>
+                                    <form action="" method="post">
+                                        <strong class="text-red fs16">Change profile picture</strong>
+                                        <div class="media mb20">
+                                            <img id="profile-img" class="d-flex mr-3" src="https://placehold.it/64x64" alt="Avatar's user" width="100" height="100">
+                                            <div class="media-body">
+                                                <div class="md-form">
+                                                    <input class="form-control" type="file"
+                                                           onchange="document.getElementById('profile-img').src = window.URL.createObjectURL(this.files[0])" name="profile-img">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="md-form">
+                                            <strong class="text-red fs16">User name</strong>
+                                            <input type="text" id="user-name" name="user-name" value="hahah123" class="form-control">
+                                        </div>
+
+                                        <div class="md-form">
+                                            <strong class="text-red fs16">Password</strong>
+                                            <input type="password" id="password" name="password" value="hahah123" class="form-control">
+                                        </div>
+
+                                        <div class="md-form">
+                                            <strong class="text-red fs16">Re-type password</strong>
+                                            <input type="password" id="re-password" name="re-password" value="hahah123" class="form-control">
+                                        </div>
+
+                                        <div class="md-form">
+                                            <strong class="text-red fs16">Email</strong>
+                                            <input type="email" id="email" name="email" value="hahah123@goohyeah.com" class="form-control">
+                                        </div>
+
+                                        <div class="md-form text-center">
+                                            <button type="submit" class="btn btn-lg btn-strong-orange waves-effect waves-light">
+                                                Save changes
+                                            </button>
+                                            <button type="reset" class="btn btn-lg btn-orange waves-effect waves-light">
+                                                Reset
+                                            </button>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--/.Panel 2-->
+                                <!--Panel 3-->
+                                <div class="tab-pane fade pb125" id="address" role="tabpanel">
+                                    <h2 class="title-strong-orange h2-responsive">
+                                        Address setting
+                                    </h2>
+                                    <form action="" method="post">
+                                        <div class="md-form">
+                                            <strong class="text-red fs16">Address 1</strong>
+                                            <input type="text" id="add1" name="add1" value="123 Milley Ave, Massachusetts" class="form-control">
+                                        </div>
+
+                                        <div class="md-form">
+                                            <strong class="text-red fs16">Address 2</strong>
+                                            <input type="text" id="add2" name="add2" value="Address 2" class="form-control">
+                                        </div>
+
+                                        <div class="md-form">
+                                            <strong class="text-red fs16">States</strong>
+                                            <input type="search" id="form-autocomplete" class="form-control mdb-autocomplete" placeholder="States">
+                                            <button class="mdb-autocomplete-clear">
+                                                <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="https://www.w3.org/2000/svg">
+                                                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                                                    <path d="M0 0h24v24H0z" fill="none" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="md-form">
+                                            <strong class="text-red fs16">Zip code</strong>
+                                            <input type="text" id="zip" name="zip" value="Zip code" class="form-control">
+                                        </div>
+
+                                        <div class="md-form text-center">
+                                            <button type="submit" class="btn btn-lg btn-strong-orange waves-effect waves-light">
+                                                Save changes
+                                            </button>
+                                            <button type="reset" class="btn btn-lg btn-orange waves-effect waves-light">
+                                                Reset
+                                            </button>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--/.Panel 3-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="page-footer bg-gradient-strong-orange center-on-small-only">
+
+                <!--Footer Links-->
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <p>
+                                © 2017 Copyright: <a href="https://goohyeah.com">Goohyeah Corp</a>
+                                . All rights reserved
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-inline text-right">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="terms.html">Terms of Use</a></li>
+                                <li><a href="policy.html">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <!--/.Second column-->
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- /Start your project here-->
+        <!-- Modal -->
+        <div class="modal fade left" id="basicExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-full-height modal-left sidenav" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <h4 class="modal-title w-100" id="myModalLabel">GoOhYeah</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body">
+
+                        <!--Author box-->
+                        <div class="author-box">
+                            <div class="row">
+                                <!--Avatar-->
+                                <div class="col-3 text-center">
+                                    <img src="http://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="img-fluid rounded-circle z-depth-2">
+                                </div>
+                                <!--Author Data-->
+                                <div class="col-9">
+                                    <p><strong>John Doe</strong></p>
+                                    <p>
+                                        <a class="waves-effect waves-light" href="setting.html">
+                                            <i class="fa fa-cog"></i>
+                                            Setting
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a class="waves-effect waves-light" href="index.html">
+                                            <i class="fa fa-sign-out"></i>
+                                            Sign out
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Author box-->
+                        <ul>
+                            <li class="btn-group">
+                                <a class="collapse-arrow-down" data-toggle="collapse" href="#help-nav" aria-expanded="false" aria-controls="help-nav">
+                                    <i class="fa fa-question"></i>
+                                    Help
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                            </li>
+                            <div class="collapse collapse-side-nav" id="help-nav">
+                                <ul>
+                                    <li>
+                                        <a href="about.html">
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="terms.html">
+                                            Terms of Use
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Privacy Policy
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <li class="btn-group">
+                                <a class="collapse-arrow-down" data-toggle="collapse" href="#cate-nav" aria-expanded="false" aria-controls="help-nav">
+                                    <i class="fa fa-cutlery"></i>
+                                    Popular Catogories
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                            </li>
+                            <div class="collapse collapse-side-nav" id="cate-nav">
+                                <ul>
+                                    <li class="active">
+                                        <a href="#">
+                                            Restaurant
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Night life
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Spa
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Soical
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Outdoor
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            BBQ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+      <ul class="tab-mobile nav nav-tabs nav-justified bg-gradient-strong-orange" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#profile" role="tab">
+            Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#account" role="tab">
+            Account
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#address" role="tab">
+            Address
+          </a>
+        </li>
+      </ul>
+        <!-- Modal -->
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/tether.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/compiled.js"></script>
+        <script src="js/jquery.flip.min.js"></script>
+        <script type="text/javascript" src="js/matchHeight/dist/jquery.matchHeight-min.js"></script>
+
+        <script>
+            var states = [
+                "Alabana",
+                "Alaska",
+                "Arizona",
+                "Arkansas",
+                "California",
+                "Colorado",
+                "Connecticut",
+                "Delaware",
+                "Florida",
+                "Georgia",
+                "Hawaii",
+                "Idaho",
+                "Illnois",
+                "Indiana",
+                "Iowa",
+                "Kansas",
+                "Kentucky",
+                "Louisiana",
+                "Maine",
+                "Maryland",
+                "Massachusetts",
+                "Michigan",
+                "Minnesota",
+                "Mississippi",
+                "Missouri",
+                "Montana",
+                "Nebraska",
+                "Nevada",
+                "New Hampshire",
+                "New Jersey",
+                "New Mexico",
+                "New York",
+                "North Carolina",
+                "North Dakota",
+                "Ohio",
+                "Oklahoma",
+                "Oregon",
+                "Pennsylvania",
+                "Rhode Island",
+                "South Carolina",
+                "South Dakota",
+                "Tennessee",
+                "Texas",
+                "Utah",
+                "Vermont",
+                "Virginia",
+                "Washington",
+                "West Virginia",
+                "Winsconsin",
+                "Wyoming"
+            ];
+
+            $('.mdb-autocomplete').mdb_autocomplete({
+                data: states
+            });
+        </script>
+    </body>
+
+</html>

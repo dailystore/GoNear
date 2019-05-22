@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Result for Happy Restaurant | GoOhYeah</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Material Design Bootstrap -->
+    <link href="css/compiled.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/mdb.css" rel="stylesheet">
+    <link href="css/jquery-comments.css" rel="stylesheet">
+    <link href="components/swiper/dist/css/swiper.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
+    <script src="https://use.fontawesome.com/02a2437bce.js"></script>
+
+    <style>
+        .stick-map-up {
+            position:fixed;
+            top:0px;
+            width:100%;
+            left:0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+    <div style="height: 100vh">
+
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-strong-orange">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="modal" data-target="#basicExample" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index-login.html">
+                    <img class="img-fluid" src="img/common/logo.png" alt="GoOhYeah"/>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav1">
+                    <ul class="navbar-nav ml-auto"></ul>
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                        <li class="nav-item avatar dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light" href="#" id="user-avatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="http://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="img-fluid rounded-circle z-depth-0"></a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-avatar" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                <h6 class="dropdown-header">Welcome Helly</h6>
+                                <a class="dropdown-item waves-effect waves-light" href="setting.html">
+                                    <i class="fa fa-cog"></i>
+                                    Setting
+                                </a>
+
+                                <a class="dropdown-item waves-effect waves-light" href="index.html">
+                                    <i class="fa fa-sign-out"></i>
+                                    Sign out
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-all pb100">
+            <div class="container">
+                <h2 class="text-fluid title-strong-orange">
+                    Restaurant in Texas
+                </h2>
+            </div>
+            <div class="container sticky-map">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7238871785307!2d106.67297251480055!3d10.755750292335538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752efd721bfaed%3A0xadbda163cab8ce0b!2zMzM5IE5ndXnhu4VuIFRyw6NpLCBQaMaw4budbmcgNywgUXXhuq1uIDUsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1497618779364" allowfullscreen="" width="100%" height="200" frameborder="0"></iframe>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="section-filter">
+                           <div class="sticky-filter">
+                               <h4 class="title-strong-pink">Fillter</h4>
+                               <select class="mdb-select colorful-select dropdown-primary">
+                                   <option value="" disabled selected>Distance</option>
+                                   <option value="1">0 -5km</option>
+                                   <option value="2">5 - 10km</option>
+                                   <option value="3">> 10km</option>
+                               </select>
+
+                               <select class="mdb-select colorful-select dropdown-primary">
+                                   <option value="" disabled selected>Price</option>
+                                   <option value="1">Moderate</option>
+                                   <option value="2">Pricey</option>
+                                   <option value="3">High-end</option>
+                               </select>
+
+                               <select class="mdb-select colorful-select dropdown-primary">
+                                   <option value="" disabled selected>Feature</option>
+                                   <option value="1">Delivery</option>
+                                   <option value="2">Reservation</option>
+                                   <option value="3">Offer a deal</option>
+                                   <option value="3">Open now</option>
+                               </select>
+
+                               <select class="mdb-select colorful-select dropdown-primary">
+                                   <option value="" disabled selected>Sort by</option>
+                                   <option value="1">Best match</option>
+                                   <option value="2">Highest rate</option>
+                                   <option value="3">Most view</option>
+                               </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="comments-list list-store text-left">
+                            <h6 class="text-right">Showing 4 of 12</h6>
+                            <!--First row-->
+                            <div class="row mb10">
+                                <!--Image column-->
+                                <div class="col-md-2 col-12">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+                                </div>
+                                <!--/.Image column-->
+                                <!--Content column-->
+                                <div class="col-md-10 col-12">
+                                    <h3 class="user-name mb0">
+                                        <a href="details-login.html" class="hover-link inline-block">
+                                            Happy restaurant
+                                        </a>
+                                    </h3>
+                                    <div class="card-data pt0">
+                                        <ul>
+                                            <li class="comment-date">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <strong>333 reviews</strong>
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                11134 RANCHO CARMEL DR SUITE 101, San Diego, 92128, CA - 858-729-3881
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="hover-link">
+                                                    <i class="fa fa-home ml0 mr0"></i>
+                                                    www.abc.com
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--/.Content column-->
+                            </div>
+                            <div class="row mb10">
+                                <!--Image column-->
+                                <div class="col-md-2 col-12">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+                                </div>
+                                <!--/.Image column-->
+                                <!--Content column-->
+                                <div class="col-md-10 col-12">
+                                    <h3 class="user-name mb0">
+                                        <a href="details-login.html" class="hover-link inline-block">
+                                            Happy restaurant
+                                        </a>
+                                    </h3>
+                                    <div class="card-data pt0">
+                                        <ul>
+                                            <li class="comment-date">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <strong>333 reviews</strong>
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                11134 RANCHO CARMEL DR SUITE 101, San Diego, 92128, CA - 858-729-3881
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="hover-link">
+                                                    <i class="fa fa-home ml0 mr0"></i>
+                                                    www.abc.com
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--/.Content column-->
+                            </div>
+                            <div class="row mb10">
+                                <!--Image column-->
+                                <div class="col-md-2 col-12">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+                                </div>
+                                <!--/.Image column-->
+                                <!--Content column-->
+                                <div class="col-md-10 col-12">
+                                    <h3 class="user-name mb0">
+                                        <a href="details-login.html" class="hover-link inline-block">
+                                            Happy restaurant
+                                        </a>
+                                    </h3>
+                                    <div class="card-data pt0">
+                                        <ul>
+                                            <li class="comment-date">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <strong>333 reviews</strong>
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                11134 RANCHO CARMEL DR SUITE 101, San Diego, 92128, CA - 858-729-3881
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="hover-link">
+                                                    <i class="fa fa-home ml0 mr0"></i>
+                                                    www.abc.com
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--/.Content column-->
+                            </div>
+                            <div class="row mb10">
+                                <!--Image column-->
+                                <div class="col-md-2 col-12">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+                                </div>
+                                <!--/.Image column-->
+                                <!--Content column-->
+                                <div class="col-md-10 col-12">
+                                    <h3 class="user-name mb0">
+                                        <a href="details-login.html" class="hover-link inline-block">
+                                            Happy restaurant
+                                        </a>
+                                    </h3>
+                                    <div class="card-data pt0">
+                                        <ul>
+                                            <li class="comment-date">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <strong>333 reviews</strong>
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                11134 RANCHO CARMEL DR SUITE 101, San Diego, 92128, CA - 858-729-3881
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="hover-link">
+                                                    <i class="fa fa-home ml0 mr0"></i>
+                                                    www.abc.com
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--/.Content column-->
+                            </div>
+                            <div class="row mb10">
+                                <!--Image column-->
+                                <div class="col-md-2 col-12">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+                                </div>
+                                <!--/.Image column-->
+                                <!--Content column-->
+                                <div class="col-md-10 col-12">
+                                    <h3 class="user-name mb0">
+                                        <a href="details-login.html" class="hover-link inline-block">
+                                            Happy restaurant
+                                        </a>
+                                    </h3>
+                                    <div class="card-data pt0">
+                                        <ul>
+                                            <li class="comment-date">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <strong>333 reviews</strong>
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                11134 RANCHO CARMEL DR SUITE 101, San Diego, 92128, CA - 858-729-3881
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="hover-link">
+                                                    <i class="fa fa-home ml0 mr0"></i>
+                                                    www.abc.com
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--/.Content column-->
+                            </div>
+                            <div class="row mb10">
+                                <!--Image column-->
+                                <div class="col-md-2 col-12">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+                                </div>
+                                <!--/.Image column-->
+                                <!--Content column-->
+                                <div class="col-md-10 col-12">
+                                    <h3 class="user-name mb0">
+                                        <a href="details-login.html" class="hover-link inline-block">
+                                            Happy restaurant
+                                        </a>
+                                    </h3>
+                                    <div class="card-data pt0">
+                                        <ul>
+                                            <li class="comment-date">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <strong>333 reviews</strong>
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                11134 RANCHO CARMEL DR SUITE 101, San Diego, 92128, CA - 858-729-3881
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="hover-link">
+                                                    <i class="fa fa-home ml0 mr0"></i>
+                                                    www.abc.com
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--/.Content column-->
+                            </div>
+                            <div class="row mb10">
+                                <!--Image column-->
+                                <div class="col-md-2 col-12">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1.jpg">
+                                </div>
+                                <!--/.Image column-->
+                                <!--Content column-->
+                                <div class="col-md-10 col-12">
+                                    <h3 class="user-name mb0">
+                                        <a href="details-login.html" class="hover-link inline-block">
+                                            Happy restaurant
+                                        </a>
+                                    </h3>
+                                    <div class="card-data pt0">
+                                        <ul>
+                                            <li class="comment-date">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <strong>333 reviews</strong>
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                11134 RANCHO CARMEL DR SUITE 101, San Diego, 92128, CA - 858-729-3881
+                                            </li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="hover-link">
+                                                    <i class="fa fa-home ml0 mr0"></i>
+                                                    www.abc.com
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--/.Content column-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="page-footer bg-gradient-strong-orange center-on-small-only">
+
+            <!--Footer Links-->
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <p>
+                            © 2017 Copyright: <a href="https://goohyeah.com">Goohyeah Corp</a>
+                            . All rights reserved
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline text-right">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                            <li><a href="policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <!--/.Second column-->
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /Start your project here-->
+    <!-- Modal -->
+    <div class="modal fade left" id="basicExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-full-height modal-left sidenav" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <h4 class="modal-title w-100" id="myModalLabel">GoOhYeah</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+
+                    <!--Author box-->
+                    <div class="author-box">
+                        <div class="row">
+                            <!--Avatar-->
+                            <div class="col-3 text-center">
+                                <img src="http://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="img-fluid rounded-circle z-depth-2">
+                            </div>
+                            <!--Author Data-->
+                            <div class="col-9">
+                                <p><strong>John Doe</strong></p>
+                                <p>
+                                    <a class="waves-effect waves-light" href="setting.html">
+                                        <i class="fa fa-cog"></i>
+                                        Setting
+                                    </a>
+                                </p>
+                                <p>
+                                    <a class="waves-effect waves-light" href="index.html">
+                                        <i class="fa fa-sign-out"></i>
+                                        Sign out
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Author box-->
+
+                    <ul>
+                        <li class="btn-group">
+                            <a class="collapse-arrow-down" data-toggle="collapse" href="#help-nav" aria-expanded="false" aria-controls="help-nav">
+                                <i class="fa fa-question"></i>
+                                Help
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </li>
+                        <div class="collapse collapse-side-nav" id="help-nav">
+                            <ul>
+                                <li class="active">
+                                    <a href="about.html">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="terms.html">
+                                        Terms of Use
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <li class="btn-group">
+                            <a class="collapse-arrow-down" data-toggle="collapse" href="#cate-nav" aria-expanded="false" aria-controls="help-nav">
+                                <i class="fa fa-cutlery"></i>
+                                Popular Catogories
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </li>
+                        <div class="collapse collapse-side-nav" id="cate-nav">
+                            <ul>
+                                <li class="active">
+                                    <a href="#">
+                                        Restaurant
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Night life
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Spa
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Soical
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Outdoor
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        BBQ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/compiled.js"></script>
+    <script src="js/jquery.flip.min.js"></script>
+    <script type="text/javascript" src="js/matchHeight/dist/jquery.matchHeight-min.js"></script>
+    <script type="text/javascript" src="components/swiper/dist/js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/jquery-comments.js"></script>
+
+    <script>
+        $(function () {
+            var stickyTop = $('.sticky-map').offset().top;
+
+            $(window).on( 'scroll', function(){
+                if ($(window).scrollTop() >= stickyTop) {
+                    // $('.sticky-map').css({position: "fixed", top: "0px", width: "100%", left: "0"});
+                    $('.sticky-map').addClass("stick-map-up")
+                    $('.list-store').addClass("stick-active")
+                    $('.sticky-filter').addClass("sticky-filter-active")
+                } else {
+                    // $('.sticky-map').css({position: "relative", top: "0px", width: "auto", left: "auto"});
+                    $('.sticky-map').removeClass("stick-map-up")
+                    $('.list-store').removeClass("stick-active")
+                    $('.sticky-filter').removeClass("sticky-filter-active")
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
