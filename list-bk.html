@@ -15,7 +15,8 @@
   <link href="css/jquery-comments.css" rel="stylesheet">
   <link href="components/swiper/dist/css/swiper.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <style>
     .stick-map-up {
@@ -24,6 +25,47 @@
       width: 100%;
       left: 0;
       right: 0;
+    }
+
+    .btn-apply-filter {
+      vertical-align: bottom;
+      margin-top: 230px;
+      margin-left: -110px;
+    }
+
+    .btn-close-filter {
+      vertical-align: bottom;
+      margin-top: 230px;
+      margin-left: 0px;
+    }
+
+    .more-filter {
+      margin-left: 35px;
+      color: grey;
+    }
+
+    .distance {
+      color: grey;
+    }
+
+    .nav-category .navbar-nav>li>a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown .dropdown-menu.dropdown-default .dropdown-item:active,
+    .dropdown .dropdown-menu.dropdown-default .dropdown-item:hover {
+      /* background-color: #34b8ff; */
+      background-color: #4ec1ff;
+    }
+
+    li.dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+
+    .list-store .card .card-data .fas,
+    .list-store .card .card-data .far {
+      display: inline;
+      color: #F35569 !important;
     }
   </style>
 </head>
@@ -112,39 +154,38 @@
       <div class="container">
         <a class="navbar-brand orange-text" href="#">Categories</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-category"
-                aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="nav-category">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="nav-restaurant" data-toggle="dropdown"
-                 aria-haspopup="true" aria-expanded="false">Restaurant
+              <a class="nav-link dropdown-toggle" id="nav-restaurant" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Restaurants
               </a>
               <div class="dropdown-menu dropdown-default" aria-labelledby="nav-restaurant">
                 <div class="row">
                   <div class="col">
-                    <a class="dropdown-item" href="#">Delivery</a>
-                    <a class="dropdown-item" href="#">Reservation</a>
-                    <a class="dropdown-item" href="#">Burgers</a>
+                    <a class="dropdown-item" href="#">Ha Noi</a>
+                    <a class="dropdown-item" href="#">Mexican</a>
+                    <a class="dropdown-item" href="#">Thailand</a>
                     <a class="dropdown-item" href="#">Italian</a>
                   </div>
 
                   <div class="col">
-                    <a class="dropdown-item" href="#">Delivery</a>
-                    <a class="dropdown-item" href="#">Reservation</a>
-                    <a class="dropdown-item" href="#">Burgers</a>
-                    <a class="dropdown-item" href="#">Italian</a>
+                    <a class="dropdown-item" href="#">Burger</a>
+                    <a class="dropdown-item" href="#">Buffet</a>
+                    <a class="dropdown-item" href="#">Noodle</a>
+                    <a class="dropdown-item" href="#">Rice</a>
                   </div>
                 </div>
               </div>
             </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="nav-home-service" data-toggle="dropdown"
-                 aria-haspopup="true" aria-expanded="false">Home service
+            <li class="nav-item ">
+              <a class="nav-link" id="nav-home-service" aria-expanded="false">Coffee & Tea
               </a>
-              <div class="dropdown-menu dropdown-default" aria-labelledby="nav-home-service">
+              <!-- <div class="dropdown-menu dropdown-default" aria-labelledby="nav-home-service">
                 <div class="row">
                   <div class="col">
                     <a class="dropdown-item" href="#">Delivery</a>
@@ -160,50 +201,42 @@
                     <a class="dropdown-item" href="#">Italian</a>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="nav-auto-service" data-toggle="dropdown"
-                 aria-haspopup="true" aria-expanded="false">Auto service
+              <a class="nav-link dropdown-toggle" id="nav-local-service" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Local Services
               </a>
-              <div class="dropdown-menu dropdown-default" aria-labelledby="nav-auto-service">
+              <div class="dropdown-menu dropdown-default" aria-labelledby="nav-local-service">
                 <div class="row">
                   <div class="col">
-                    <a class="dropdown-item" href="#">Delivery</a>
-                    <a class="dropdown-item" href="#">Reservation</a>
-                    <a class="dropdown-item" href="#">Burgers</a>
-                    <a class="dropdown-item" href="#">Italian</a>
+                    <a class="dropdown-item" href="#">Tutors</a>
+                    <a class="dropdown-item" href="#">Locksmith</a>
+                    <a class="dropdown-item" href="#">Handyman</a>
+                    <a class="dropdown-item" href="#">Electricians</a>
                   </div>
 
                   <div class="col">
-                    <a class="dropdown-item" href="#">Delivery</a>
-                    <a class="dropdown-item" href="#">Reservation</a>
-                    <a class="dropdown-item" href="#">Burgers</a>
-                    <a class="dropdown-item" href="#">Italian</a>
+                    <a class="dropdown-item" href="#">Electronics Repair</a>
+                    <a class="dropdown-item" href="#">IT Services</a>
                   </div>
                 </div>
               </div>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="nav-more" data-toggle="dropdown"
-                 aria-haspopup="true" aria-expanded="false">More
+              <a class="nav-link dropdown-toggle" id="nav-more" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">More
               </a>
               <div class="dropdown-menu dropdown-default" aria-labelledby="nav-more">
                 <div class="row">
                   <div class="col">
-                    <a class="dropdown-item" href="#">Delivery</a>
-                    <a class="dropdown-item" href="#">Reservation</a>
-                    <a class="dropdown-item" href="#">Burgers</a>
-                    <a class="dropdown-item" href="#">Italian</a>
+                    <a class="dropdown-item" href="#">ATMs</a>
                   </div>
 
                   <div class="col">
-                    <a class="dropdown-item" href="#">Delivery</a>
-                    <a class="dropdown-item" href="#">Reservation</a>
-                    <a class="dropdown-item" href="#">Burgers</a>
-                    <a class="dropdown-item" href="#">Italian</a>
+                    <a class="dropdown-item" href="#">Fuels</a>
                   </div>
                 </div>
               </div>
@@ -246,7 +279,7 @@
             <div class="container-filter">
               <div class="btn-group">
                 <button class="btn btn-light-orange" data-toggle="collapse" data-target="#filter-details"
-                        aria-expanded="false">
+                  aria-expanded="false">
                   <i class="fas fa-sliders-h"></i>
                   Filter
                 </button>
@@ -268,10 +301,10 @@
               </div>
 
               <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-light-orange form-check-label">
+                <label class="btn btn-light-orange active form-check-label">
                   <input class="form-check-input" type="checkbox" autocomplete="off">
-                  <i class="fas fa-clock-o mr-1"></i>
-                  Open now
+                  <i class="fa fa-location-arrow mr-1"></i>
+                  Near Me
                 </label>
               </div>
 
@@ -279,26 +312,27 @@
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-light-orange form-check-label">
                   <input class="form-check-input" type="checkbox" autocomplete="off">
-                  <i class="fas fa-truck mr-1"></i>
-                  Delivery
+                  <i class="fa fa-tag mr-1"></i>
+                  Discount
                 </label>
               </div>
 
-              <div class="btn-group" data-toggle="buttons">
+
+              <!-- <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-light-orange form-check-label">
                   <input class="form-check-input" type="checkbox" autocomplete="off">
                   <i class="fas fa-shopping-bag mr-1"></i>
                   Takeout
                 </label>
-              </div>
+              </div> -->
 
-              <div class="btn-group" data-toggle="buttons">
+              <!-- <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-light-orange form-check-label">
                   <input class="form-check-input" type="checkbox" autocomplete="off">
                   <i class="fas fa-hourglass-end mr-1"></i>
                   Waitlist
                 </label>
-              </div>
+              </div> -->
 
 
             </div>
@@ -333,36 +367,37 @@
                   </div>
                   <div class="col-md col-sm-2">
                     <p class="title-strong-orange fs-4 mb-1">
-                      Neighborhoods
+                      Areas
                     </p>
 
                     <div class="form-check">
                       <input type="checkbox" class="form-check-input" id="place-1">
-                      <label class="form-check-label" for="place-1">Outer Sunset</label>
+                      <label class="form-check-label" for="place-1">Notre Dame</label>
                     </div>
 
                     <div class="form-check">
                       <input type="checkbox" class="form-check-input" id="place-2">
-                      <label class="form-check-label" for="place-2">Outer Sunset</label>
+                      <label class="form-check-label" for="place-2">Thanh Giong Roundabout</label>
                     </div>
 
                     <div class="form-check">
                       <input type="checkbox" class="form-check-input" id="place-3">
-                      <label class="form-check-label" for="place-3">Outer Sunset</label>
+                      <label class="form-check-label" for="place-3">23/9 Park</label>
                     </div>
 
                     <div class="form-check">
                       <input type="checkbox" class="form-check-input" id="place-4">
-                      <label class="form-check-label" for="place-4">Outer Sunset</label>
+                      <label class="form-check-label" for="place-4">HUFLIT University</label>
                     </div>
 
-                    <button type="button" class="btn btn-light-orange btn-sm" data-toggle="modal" data-target="#more-neighborhoods">
-                      More neighborhoods
-                    </button>
+                    <!-- <button type="button" class="btn btn-light-orange btn-sm" data-toggle="modal"
+                      data-target="#more-neighborhoods">
+                      More areas
+                    </button> -->
+                    <span class="more-filter"><a>More...</a></span>
 
 
-                    <div class="modal fade" id="more-neighborhoods" tabindex="-1" role="dialog"
-                         aria-hidden="true">
+                    <div class="modal fade" id="more-neighborhoods" tabindex="-1" role="dialog" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -403,7 +438,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md col-sm-2">
+                  <!-- <div class="col-md col-sm-2">
                     <p class="title-strong-orange fs-4 mb-1">
                       Distance
                     </p>
@@ -411,37 +446,37 @@
                     <ul>
                       <li>
                         <a href="#">
-                          Bird's-eye View
+                          1km
                         </a>
                       </li>
 
                       <li>
                         <a href="#">
-                          Driving (5 mi.)
+                          2km
                         </a>
                       </li>
 
                       <li>
                         <a href="#">
-                          Biking (2 mi.)
+                          5km
                         </a>
                       </li>
 
                       <li>
                         <a href="#">
-                          Walking (1 mi.)
+                          10km
                         </a>
                       </li>
 
                       <li>
                         <a href="#">
-                          Within 4 blocks
+                          15km
                         </a>
                       </li>
                     </ul>
 
-                  </div>
-                  <div class="col-md col-sm-2">
+                  </div> -->
+                  <!-- <div class="col-md col-sm-2">
                     <p class="title-strong-orange fs-4 mb-1">
                       Price
                     </p>
@@ -465,7 +500,7 @@
                       <input type="checkbox" class="form-check-input" id="price-4">
                       <label class="form-check-label" for="price-4">$$$$</label>
                     </div>
-                  </div>
+                  </div> -->
                   <div class="col-md col-sm-2">
                     <p class="title-strong-orange fs-4 mb-1">
                       Features
@@ -483,7 +518,7 @@
                       <input type="checkbox" class="form-check-input" id="takeout">
                       <label class="form-check-label" for="takeout">
                         <i class="fas fa-shopping-bag mr-1 orange-text"></i>
-                        Takeout
+                        Has Dessert
                       </label>
                     </div>
 
@@ -491,7 +526,7 @@
                       <input type="checkbox" class="form-check-input" id="waitlist">
                       <label class="form-check-label" for="waitlist">
                         <i class="fas fa-hourglass-end mr-1 orange-text"></i>
-                        Waitlist
+                        Has Garden
                       </label>
                     </div>
 
@@ -504,12 +539,14 @@
                     </div>
 
 
-                    <button type="button" class="btn btn-light-orange btn-sm" data-toggle="modal" data-target="#more-features">
+                    <!-- <button type="button" class="btn btn-light-orange btn-sm" data-toggle="modal"
+                      data-target="#more-features">
                       More features
-                    </button>
+                    </button> -->
+                    <span class="more-filter"><a>More...</a></span>
 
-                    <div class="modal fade" id="more-features" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                         aria-hidden="true">
+                    <div class="modal fade" id="more-features" tabindex="-1" role="dialog"
+                      aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -561,12 +598,14 @@
 
                                   <div class="custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="modal-reservations">
-                                    <label class="custom-control-label" for="modal-reservations">Takes Reservations</label>
+                                    <label class="custom-control-label" for="modal-reservations">Takes
+                                      Reservations</label>
                                   </div>
 
                                   <div class="custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="modal-credit-card">
-                                    <label class="custom-control-label" for="modal-credit-card">Accepts Credit Cards</label>
+                                    <label class="custom-control-label" for="modal-credit-card">Accepts Credit
+                                      Cards</label>
                                   </div>
 
                                   <div class="custom-checkbox">
@@ -595,12 +634,14 @@
                                 <div class="col-md">
                                   <div class="custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="modal-wheelchair">
-                                    <label class="custom-control-label" for="modal-wheelchair">Wheelchair Accessible</label>
+                                    <label class="custom-control-label" for="modal-wheelchair">Wheelchair
+                                      Accessible</label>
                                   </div>
 
                                   <div class="custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="modal-appointment">
-                                    <label class="custom-control-label" for="modal-appointment">By Appointment Only</label>
+                                    <label class="custom-control-label" for="modal-appointment">By Appointment
+                                      Only</label>
                                   </div>
 
                                   <div class="custom-checkbox">
@@ -621,27 +662,32 @@
 
                                   <div class="custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="modal-certificates">
-                                    <label class="custom-control-label" for="modal-certificates">Sells Gift Certificates</label>
+                                    <label class="custom-control-label" for="modal-certificates">Sells Gift
+                                      Certificates</label>
                                   </div>
 
                                   <div class="custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="modal-vegetarians">
-                                    <label class="custom-control-label" for="modal-vegetarians">Liked by Vegetarians</label>
+                                    <label class="custom-control-label" for="modal-vegetarians">Liked by
+                                      Vegetarians</label>
                                   </div>
 
                                   <div class="custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="modal-liked-20">
-                                    <label class="custom-control-label" for="modal-liked-20">Liked by 20-somethings</label>
+                                    <label class="custom-control-label" for="modal-liked-20">Liked by
+                                      20-somethings</label>
                                   </div>
 
                                   <div class="custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="modal-liked-30">
-                                    <label class="custom-control-label" for="modal-liked-30">Liked by 20-somethings</label>
+                                    <label class="custom-control-label" for="modal-liked-30">Liked by
+                                      20-somethings</label>
                                   </div>
 
                                   <div class="custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="modal-liked-40">
-                                    <label class="custom-control-label" for="modal-liked-40">Liked by 20-somethings</label>
+                                    <label class="custom-control-label" for="modal-liked-40">Liked by
+                                      20-somethings</label>
                                   </div>
 
                                   <div class="custom-checkbox">
@@ -657,7 +703,8 @@
 
                                   <div class="custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" id="modal-gender-restroom">
-                                    <label class="custom-control-label" for="modal-gender-restroom">Gender Neutral Restrooms</label>
+                                    <label class="custom-control-label" for="modal-gender-restroom">Gender Neutral
+                                      Restrooms</label>
                                   </div>
                                 </div>
                               </div>
@@ -807,7 +854,8 @@
 
                               <div class="custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="modal-outdoor-smoking">
-                                <label class="custom-control-label" for="modal-outdoor-smoking">Outdoor Area / Patio Only</label>
+                                <label class="custom-control-label" for="modal-outdoor-smoking">Outdoor Area / Patio
+                                  Only</label>
                               </div>
 
                             </div>
@@ -861,6 +909,16 @@
 
 
                   </div>
+                  <div class="col-md col-sm-2">
+                    <button type="button" class="btn-close-filter btn btn-light-orange btn-sm">
+                      Close
+                    </button>
+                  </div>
+                  <div class="col-md col-sm-2">
+                    <button type="button" class="btn-apply-filter btn btn-light-orange btn-sm">
+                      Apply Filter
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -871,7 +929,7 @@
                 <div class="card">
                   <!-- Card image -->
                   <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-                       alt="Card image cap">
+                    alt="Card image cap">
                   <!-- Card content -->
                   <div class="card-body">
                     <h3 class="user-name mb0">
@@ -884,9 +942,9 @@
                         <li class="comment-date">
                           <i class="fa fa-star"></i>
                           <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
                           <strong>333 reviews</strong>
                         </li>
                       </ul>
@@ -894,7 +952,7 @@
                       <ul>
                         <li>
                           <i class="fa fa-map-marker"></i>
-                          285 Cách Mạng Tháng 8, Quận 10, Hồ Chí Minh - 090252525
+                          <span class="distance">200m - </span>285 Cách Mạng Tháng 8, Quận 10, Hồ Chí Minh - 090252525
                         </li>
                       </ul>
 
@@ -929,8 +987,8 @@
                           <i class="fa fa-star"></i>
                           <i class="fa fa-star"></i>
                           <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <i class="far fa-star"></i>
                           <strong>222 reviews</strong>
                         </li>
                       </ul>
@@ -938,7 +996,8 @@
                       <ul>
                         <li>
                           <i class="fa fa-map-marker"></i>
-                          493 Nguyễn Tri Phương, Phường 8, Quận 10, Hồ Chí Minh - 0588149256
+                          <span class="distance">720m - </span>493 Nguyễn Tri Phương, Phường 8, Quận 10, Hồ Chí Minh -
+                          0588149256
                         </li>
                       </ul>
 
@@ -946,7 +1005,7 @@
                         <li>
                           <a href="#" class="hover-link">
                             <i class="fa fa-home ml0 mr0"></i>
-                            https://www.facebook.com/pg/bgs.nguyentriphuong
+                            www.facebook.com/pg/bgs.nguyentriphuong
                           </a>
                         </li>
                       </ul>
@@ -973,8 +1032,8 @@
                           <i class="fa fa-star"></i>
                           <i class="fa fa-star"></i>
                           <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
-                          <i class="fa fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <i class="far fa-star"></i>
                           <strong>408 reviews</strong>
                         </li>
                       </ul>
@@ -982,7 +1041,8 @@
                       <ul>
                         <li>
                           <i class="fa fa-map-marker"></i>
-                          130-1 Tôn Thất Đạm, Bến Nghé, Quận 1, Hồ Chí Minh - 0326911720
+                          <span class="distance">360m - </span>130 Tôn Thất Đạm, Bến Nghé, Quận 1, Hồ Chí Minh -
+                          0326911720
                         </li>
                       </ul>
 
@@ -990,7 +1050,7 @@
                         <li>
                           <a href="#" class="hover-link">
                             <i class="fa fa-home ml0 mr0"></i>
-                            http://www.union-jacks.co/
+                            www.union-jacks.co/
                           </a>
                         </li>
                       </ul>
@@ -1026,7 +1086,8 @@
                       <ul>
                         <li>
                           <i class="fa fa-map-marker"></i>
-                          43 Nguyễn Văn Giai, Đa Kao, Quận 1, Hồ Chí Minh - 0356581648
+                          <span class="distance">1.3km - </span>43 Nguyễn Văn Giai, Đa Kao, Quận 1, Hồ Chí Minh -
+                          0356581648
                         </li>
                       </ul>
 
@@ -1034,7 +1095,7 @@
                         <li>
                           <a href="#" class="hover-link">
                             <i class="fa fa-home ml0 mr0"></i>
-                            https://www.facebook.com/pg/IndikaSaigon/
+                            www.facebook.com/pg/IndikaSaigon/
                           </a>
                         </li>
                       </ul>
@@ -1048,7 +1109,7 @@
                 <div class="card">
                   <!-- Card image -->
                   <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
-                       alt="Card image cap">
+                    alt="Card image cap">
                   <!-- Card content -->
                   <div class="card-body">
                     <h3 class="user-name mb0">
@@ -1071,7 +1132,8 @@
                       <ul>
                         <li>
                           <i class="fa fa-map-marker"></i>
-                          1 Nguyễn Văn Linh, Tân Phong, Quận 7, Tân Phong Quận 7 Hồ Chí Minh
+                          <span class="distance">580m - </span>1 Nguyễn Văn Linh, Tân Phong, Quận 7, Tân Phong Quận 7 Hồ
+                          Chí Minh
                         </li>
                       </ul>
 
@@ -1079,7 +1141,7 @@
                         <li>
                           <a href="#" class="hover-link">
                             <i class="fa fa-home ml0 mr0"></i>
-                            https://www.instagram.com/petit_bones
+                            www.instagram.com/petit_bones
                           </a>
                         </li>
                       </ul>
@@ -1099,161 +1161,161 @@
       <div class="container">
 
 
-      <footer class="page-footer bg-gradient-strong-orange center-on-small-only">
+        <footer class="page-footer bg-gradient-strong-orange center-on-small-only">
 
-        <!--Footer Links-->
-        <div class="container-fluid">
-          <div class="row">
+          <!--Footer Links-->
+          <div class="container-fluid">
+            <div class="row">
 
-            <div class="col-md-6">
-              <p>
-                © 2017 Copyright: <a href="https://kie.io/GoNear">GoNear Corp</a>
-                . All rights reserved
-              </p>
+              <div class="col-md-6">
+                <p>
+                  © 2017 Copyright: <a href="https://kie.io/GoNear">GoNear Corp</a>
+                  . All rights reserved
+                </p>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-inline text-right">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="terms.html">Terms of Use</a></li>
+                  <li><a href="policy.html">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <!--/.Second column-->
             </div>
-            <div class="col-md-6">
-              <ul class="list-inline text-right">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="terms.html">Terms of Use</a></li>
-                <li><a href="policy.html">Privacy Policy</a></li>
+          </div>
+        </footer>
+
+      </div>
+      <!-- /Start your project here-->
+      <!-- Modal -->
+      <div class="modal fade left" id="basicExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-full-height modal-left sidenav" role="document">
+          <!--Content-->
+          <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+              <h4 class="modal-title w-100" id="myModalLabel">GoNear</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+              <ul>
+                <li>
+                  <a href="login.html">
+                    <i class="fa fa-user"></i>
+                    Login/Signup
+                  </a>
+                </li>
+
+                <li class="btn-group">
+                  <a class="collapse-arrow-down" data-toggle="collapse" href="#help-nav" aria-expanded="false"
+                    aria-controls="help-nav">
+                    <i class="fa fa-question"></i>
+                    Help
+                    <i class="fa fa-chevron-up"></i>
+                  </a>
+                </li>
+                <div class="collapse collapse-side-nav" id="help-nav">
+                  <ul>
+                    <li class="active">
+                      <a href="about.html">
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="terms.html">
+                        Terms of Use
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Privacy Policy
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <li class="btn-group">
+                  <a class="collapse-arrow-down" data-toggle="collapse" href="#cate-nav" aria-expanded="false"
+                    aria-controls="help-nav">
+                    <i class="fa fa-cutlery"></i>
+                    Popular Catogories
+                    <i class="fa fa-chevron-up"></i>
+                  </a>
+                </li>
+                <div class="collapse collapse-side-nav" id="cate-nav">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        Restaurant
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Night life
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Spa
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Soical
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Outdoor
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        BBQ
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </ul>
             </div>
-            <!--/.Second column-->
           </div>
+          <!--/.Content-->
         </div>
-      </footer>
-
-    </div>
-    <!-- /Start your project here-->
-    <!-- Modal -->
-    <div class="modal fade left" id="basicExample" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog modal-full-height modal-left sidenav" role="document">
-        <!--Content-->
-        <div class="modal-content">
-          <!--Header-->
-          <div class="modal-header">
-            <h4 class="modal-title w-100" id="myModalLabel">GoNear</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <!--Body-->
-          <div class="modal-body">
-            <ul>
-              <li>
-                <a href="login.html">
-                  <i class="fa fa-user"></i>
-                  Login/Signup
-                </a>
-              </li>
-
-              <li class="btn-group">
-                <a class="collapse-arrow-down" data-toggle="collapse" href="#help-nav" aria-expanded="false"
-                  aria-controls="help-nav">
-                  <i class="fa fa-question"></i>
-                  Help
-                  <i class="fa fa-chevron-up"></i>
-                </a>
-              </li>
-              <div class="collapse collapse-side-nav" id="help-nav">
-                <ul>
-                  <li class="active">
-                    <a href="about.html">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="terms.html">
-                      Terms of Use
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Privacy Policy
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <li class="btn-group">
-                <a class="collapse-arrow-down" data-toggle="collapse" href="#cate-nav" aria-expanded="false"
-                  aria-controls="help-nav">
-                  <i class="fa fa-cutlery"></i>
-                  Popular Catogories
-                  <i class="fa fa-chevron-up"></i>
-                </a>
-              </li>
-              <div class="collapse collapse-side-nav" id="cate-nav">
-                <ul>
-                  <li>
-                    <a href="#">
-                      Restaurant
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Night life
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Spa
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Soical
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Outdoor
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      BBQ
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </ul>
-          </div>
-        </div>
-        <!--/.Content-->
       </div>
-    </div>
-    <!-- Modal -->
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/compiled.js"></script>
-    <script src="js/jquery.flip.min.js"></script>
-    <script type="text/javascript" src="js/matchHeight/dist/jquery.matchHeight-min.js"></script>
-    <script type="text/javascript" src="components/swiper/dist/js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/jquery-comments.js"></script>
+      <!-- Modal -->
+      <!-- SCRIPTS -->
+      <!-- JQuery -->
+      <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="js/compiled.js"></script>
+      <script src="js/jquery.flip.min.js"></script>
+      <script type="text/javascript" src="js/matchHeight/dist/jquery.matchHeight-min.js"></script>
+      <script type="text/javascript" src="components/swiper/dist/js/swiper.min.js"></script>
+      <script type="text/javascript" src="js/jquery-comments.js"></script>
       <script type="text/javascript" src="https://abouolia.github.io/sticky-sidebar/js/ResizeSensor.js"></script>
-    <script type="text/javascript" src="js/sticky-sidebar/dist/sticky-sidebar.js"></script>
-    <script src="https://maps.google.com/maps/api/js?key=AIzaSyCfCoGQ33RYZj_t_dldwjyPdKtVmFPYSKI"
-      type="text/javascript"></script>
-    <script type="text/javascript" src="js/list-page.js"></script>
+      <script type="text/javascript" src="js/sticky-sidebar/dist/sticky-sidebar.js"></script>
+      <script src="https://maps.google.com/maps/api/js?key=AIzaSyCfCoGQ33RYZj_t_dldwjyPdKtVmFPYSKI"
+        type="text/javascript"></script>
+      <script type="text/javascript" src="js/list-page.js"></script>
 
-    <script type="text/javascript">
+      <script type="text/javascript">
 
-      var a = new StickySidebar('#sidebar', {
-        topSpacing: 20,
-        bottomSpacing: 20,
-        containerSelector: '.container',
-        innerWrapperSelector: '.sidebar__inner',
-        minWidth: 991,
-      });
-    </script>
+        var a = new StickySidebar('#sidebar', {
+          topSpacing: 20,
+          bottomSpacing: 20,
+          containerSelector: '.container',
+          innerWrapperSelector: '.sidebar__inner',
+          minWidth: 991,
+        });
+      </script>
 </body>
 
 </html>

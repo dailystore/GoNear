@@ -240,7 +240,7 @@ $(document).ready(function () {
           var jsonResp = JSON.parse(this.responseText);
 
           if (jsonResp.status !== "OK") {
-            alert("Unable to find the described location!!! Please try again with some other terms or wipe it blank for default to San Diego.");
+            alert("Unable to find the described location!!! Please try again with some other terms or wipe it blank for default to Ho Chi Minh.");
             $('#search-location').focus();
             return;
           }
@@ -261,7 +261,7 @@ $(document).ready(function () {
       // xhttp.setRequestHeader("Authorization", window.localStorage.getItem("candy"));
       xhttp.send();
     } else {
-      window.location.href = "list-bk.html?swlon=-117.2824&swlat=32.5348&nelon=-116.9058&nelat=33.1142&loc=San%20Diego&txt=" + sName;
+      window.location.href = "list-bk.html?swlon=-117.2824&swlat=32.5348&nelon=-116.9058&nelat=33.1142&loc=Ho%20Chi%20Minh&txt=" + sName;
     }
   });
 
