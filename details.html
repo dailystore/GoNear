@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Happy Restaurant | GoOhYeah</title>
+  <title>Happy Restaurant | GoWhere</title>
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
+
   <!-- Material Design Bootstrap -->
   <link href="css/compiled.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
@@ -20,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <style>
     /* .swiper-container {
       width: 100%;
@@ -41,6 +42,55 @@
     .neural-down-pressed {
       color: red !important;
     }
+
+    .mdb-feed .news .excerpt .brief {
+      padding-bottom: 0px;
+    }
+
+    .feed-footer {
+      color: grey;
+      font-style: italic;
+      font-size: smaller;
+      line-height: initial;
+    }
+
+    #ask_community.mdb-feed .news .excerpt .brief {
+      color: #232323;
+      text-align: justify;
+    }
+
+    #ask_community h5 {
+      font-weight: bold;
+    }
+
+    #ask_community input {
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+
+    .view-answer-more {
+      /* font-size: 14px; */
+    }
+
+    .comment-submit-section {
+      width: 320px;
+      float: right;
+      padding-right: 20px;
+      padding-top: 10px;
+    }
+
+    .comment-submit-section ul {
+      float: right;
+
+    }
+
+    .comment-submit-section li {
+      vertical-align: middle;
+    }
+
+    .comment-submit-section .btn {
+      margin: 0px;
+    }
   </style>
 </head>
 
@@ -57,7 +107,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          <img class="img-fluid" src="img/common/logo.png" alt="Gonear" width="211" />
+          <img class="img-fluid" src="img/common/logo.png" alt="GoWhere" width="211" />
         </a>
         <div class="collapse navbar-collapse" id="navbarNav1">
           <ul class="navbar-nav ml-auto"></ul>
@@ -88,7 +138,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          <img class="img-fluid" src="img/common/logo.png" alt="GoOhYeah" />
+          <img class="img-fluid" src="img/common/logo.png" alt="GoWhere" />
         </a>
         <div class="collapse navbar-collapse" id="navbarNav1">
           <ul class="navbar-nav ml-auto"></ul>
@@ -103,7 +153,7 @@
             <li class="nav-item avatar dropdown">
               <a class="nav-link dropdown-toggle waves-effect waves-light" href="#" id="user-avatar"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="https://team.goohyeah.com/get_profile_avatar" class="img-fluid rounded-circle z-depth-0">
+                <img src="https://team.GoWhere.com/get_profile_avatar" class="img-fluid rounded-circle z-depth-0">
               </a>
               <div class="dropdown-menu dropdown-menu-right">
                 <h6 class="dropdown-header">Welcome <span id="welcome-name"></span></h6>
@@ -244,14 +294,12 @@
                   </div>
 
                 </div>
-                <p id="price-range-container" class="mb0 text-center-xl-max">
-                  <i class="fa fa-money" aria-hidden="true"></i>
-                  From 80.000 - 460.000 VNĐ
-                  <!-- <span id="price-range-container"></span> -->
-                </p>
                 <div class="accordion text-center-xl-max max-width-320 mx-auto" id="accordion" role="tablist"
                   aria-multiselectable="true">
+
                   <h5 class="mb-0">
+                    <img src="https://img.icons8.com/dusk/64/000000/clock.png" width="20" alt=""
+                      style="display: inline">
                     <a data-toggle="collapse" data-parent="#accordion" href="#open-time" aria-expanded="false"
                       aria-controls="collapseOne" class="text-red fs16 lh-17">
                       <strong>
@@ -313,7 +361,7 @@
                     </ul>
                   </div>
 
-                  <h5>
+                  <h5 style="margin-bottom: 0.3rem">
                     <a data-toggle="collapse" data-parent="#accordion" href="#forthcoming-schedule" aria-expanded="true"
                       aria-controls="collapseTwo" class="text-red fs16 lh-17">
                       <strong>
@@ -351,6 +399,13 @@
                     </dl>
                   </div>
                 </div>
+                <p id="price-range-container" class="mb5 text-center-xl-max">
+                  <!-- <i class="fa fa-money" aria-hidden="true"></i> -->
+                  <img src="https://img.icons8.com/color/48/000000/stack-of-money.png" width="20" alt=""
+                    style="display: inline">
+                  From 80.000 - 460.000 VNĐ
+                  <!-- <span id="price-range-container"></span> -->
+                </p>
                 <!--Text-->
                 <p class="text-center-xl-max">
                   <a href="#">
@@ -551,15 +606,7 @@
                     <div class="collapse">
                       <ul class="list-circle pl20">
                         <li>
-                          Position: Shift manager
-                        </li>
-
-                        <li>
-                          Salary: 500 - 700$
-                        </li>
-
-                        <li>
-                          Benefit: Bonous, Parking, Health-check...
+                          Grilled Lobster
                         </li>
                       </ul>
                     </div>
@@ -583,7 +630,7 @@
                   <div id="promotion-card-container" class="card-body">
                     <ul class="list-circle pl20">
                       <li>
-                        Nothing to show here for Promotion card
+                        <a href="javascript:void();">35% discount all meals on Weekend</a>
                       </li>
 
                     </ul>
@@ -593,7 +640,7 @@
             </div>
 
             <div class="row">
-              <div class="col-lg-7">
+              <div id="cus_experience_col" class="col-lg-5">
                 <h4 class="title-strong-orange mt20 mb10 fs24 text-center">Customer Experience Spotlight</h4>
                 <!--Section: Social Newsfeed-->
                 <!--Section: Testimonials v.2-->
@@ -604,8 +651,8 @@
                     data-ride="carousel" data-interval="8400">
                     <ol class="carousel-indicators">
                       <li data-target="#highlight-review" data-slide-to="0" class="active"></li>
-                      <li data-target="#highlight-review" data-slide-to="1"></li>
-                      <li data-target="#highlight-review" data-slide-to="2"></li>
+                      <!-- <li data-target="#highlight-review" data-slide-to="1"></li> -->
+                      <!-- <li data-target="#highlight-review" data-slide-to="2"></li> -->
                     </ol>
                     <!--Slides-->
                     <div class="carousel-inner" role="listbox" id="biz-top-5-reviews">
@@ -618,51 +665,48 @@
                           </div>
                           <h4 class="mb10">
                             <a href="javascipt:void();" class="hover-link">
-                              Anna Deynah
+                              Shuyin Tang
                             </a>
                           </h4>
-                          <p><i class="fa fa-quote-left"></i> Went for the beef stew and a side of chips and gravy and
-                            it was great. Thick chunks of meat and potatoes in a tasty gravy. The chips are the closest
-                            you'll get to back home too. Definitely worth checking out!</p>
+                          <p><i class="fa fa-quote-left"></i> A worth place to spend time with family at weekend.
+                            There are many delicacies.</p>
                         </div>
 
                       </div>
                       <!--Slides-->
-                      <div class="carousel-item">
-                        <div class="testimonial">
-                          <!--Avatar-->
-                          <div class="avatar">
-                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
-                              class="rounded-circle img-fluid" alt="First sample avatar image">
+                      <!-- <div class="carousel-item">
+                          <div class="testimonial">
+                            <div class="avatar">
+                              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
+                                class="rounded-circle img-fluid" alt="First sample avatar image">
+                            </div>
+                            <h4 class="mb10">
+                              <a href="javascipt:void();" class="hover-link">
+                                Anna Deynah
+                              </a>
+                            </h4>
+                            <p><i class="fa fa-quote-left"></i> Went for the beef stew and a side of chips and gravy and
+                              it was great. Thick chunks of meat and potatoes in a tasty gravy. The chips are the closest
+                              you'll get to back home too. Definitely worth checking out!</p>
                           </div>
-                          <h4 class="mb10">
-                            <a href="javascipt:void();" class="hover-link">
-                              Anna Deynah
-                            </a>
-                          </h4>
-                          <p><i class="fa fa-quote-left"></i> Went for the beef stew and a side of chips and gravy and
-                            it was great. Thick chunks of meat and potatoes in a tasty gravy. The chips are the closest
-                            you'll get to back home too. Definitely worth checking out!</p>
-                        </div>
-                      </div>
+                        </div> -->
                       <!--Slides-->
-                      <div class="carousel-item">
-                        <div class="testimonial">
-                          <!--Avatar-->
-                          <div class="avatar">
-                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
-                              class="rounded-circle img-fluid" alt="First sample avatar image">
+                      <!-- <div class="carousel-item">
+                          <div class="testimonial">
+                            <div class="avatar">
+                              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
+                                class="rounded-circle img-fluid" alt="First sample avatar image">
+                            </div>
+                            <h4 class="mb10">
+                              <a href="javascipt:void();" class="hover-link">
+                                Anna Deynah
+                              </a>
+                            </h4>
+                            <p><i class="fa fa-quote-left"></i> Went for the beef stew and a side of chips and gravy and
+                              it was great. Thick chunks of meat and potatoes in a tasty gravy. The chips are the closest
+                              you'll get to back home too. Definitely worth checking out!</p>
                           </div>
-                          <h4 class="mb10">
-                            <a href="javascipt:void();" class="hover-link">
-                              Anna Deynah
-                            </a>
-                          </h4>
-                          <p><i class="fa fa-quote-left"></i> Went for the beef stew and a side of chips and gravy and
-                            it was great. Thick chunks of meat and potatoes in a tasty gravy. The chips are the closest
-                            you'll get to back home too. Definitely worth checking out!</p>
-                        </div>
-                      </div>
+                        </div> -->
                     </div>
                     <!--Slides-->
 
@@ -673,29 +717,20 @@
                   <!--Carousel Wrapper-->
 
                 </section>
-
                 <h4 class="title-strong-orange mt20 mb10 fs24 text-center">Business Echo</h4>
-
                 <div id="biz-echo-card-container" class="card card-body">
-                  <p class="card-text fs16">Nothing except Food and Beer!</p>
+                  <p class="card-text fs16 text-center">Nothing except Food and Beer!</p>
                 </div>
-              </div>
-              <div class="col-lg-5">
-                <h4 class="title-strong-orange mt20 mb10 fs24 text-center">Staff Highlight</h4>
+                <!-- <h4 class="title-strong-orange mt20 mb10 fs24 text-center">Staff Highlight</h4>
                 <div id="staff-review"
                   class="carousel no-flex testimonial-carousel slide carousel-fade carousel-highlight"
                   data-ride="carousel" data-interval="5000">
                   <ol class="carousel-indicators">
                     <li data-target="#staff-review" data-slide-to="0" class="active"></li>
-                    <li data-target="#staff-review" data-slide-to="1"></li>
-                    <li data-target="#staff-review" data-slide-to="2"></li>
                   </ol>
-                  <!--Slides-->
                   <div id="staff-highlight-container" class="carousel-inner" role="listbox">
-                    <!--First slide-->
                     <div class="carousel-item active">
                       <div class="testimonial">
-                        <!--Avatar-->
                         <div class="avatar">
                           <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
                             class="rounded-circle img-fluid" alt="First sample avatar image">
@@ -705,17 +740,13 @@
                             Anna Deynah
                           </a>
                         </h4>
-                        <!--Content-->
                         <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                           Quod eos id officiis hic tenetur quae quaerat ad velit ab. Lorem ipsum dolor sit amet,
                           consectetur adipisicing elit.</p>
                       </div>
                     </div>
-                    <!--First slide-->
-                    <!--Second slide-->
                     <div class="carousel-item">
                       <div class="testimonial">
-                        <!--Avatar-->
                         <div class="avatar">
                           <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg"
                             class="rounded-circle img-fluid" alt="Second sample avatar image">
@@ -725,17 +756,13 @@
                             Kelly Martin
                           </a>
                         </h4>
-                        <!--Content-->
                         <p><i class="fa fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
                           odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                         </p>
                       </div>
                     </div>
-                    <!--Second slide-->
-                    <!--Third slide-->
                     <div class="carousel-item">
                       <div class="testimonial">
-                        <!--Avatar-->
                         <div class="avatar">
                           <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg"
                             class="rounded-circle img-fluid" alt="Third sample avatar image">
@@ -745,56 +772,38 @@
                             Christ Redfield
                           </a>
                         </h4>
-                        <!--Content-->
                         <p><i class="fa fa-quote-left"></i> Duis aute irure dolor in reprehenderit in voluptate velit
                           esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                           sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis
                           iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                       </div>
                     </div>
-                    <!--Third slide-->
                   </div>
-                  <!--Slides-->
+                </div> -->
 
-                  <!--Controls-->
-                  <!--Controls-->
-
-                </div>
-
-                <h4 class="title-strong-orange mt20 mb10 fs24 text-center">
+                <!-- <h4 class="title-strong-orange mt20 mb10 fs24 text-center">
                   Gift Cards
                 </h4>
 
                 <div id="carousel-gift-card"
                   class="carousel no-flex testimonial-carousel slide carousel-fade carousel-highlight"
                   data-ride="carousel" data-interval="3000">
-                  <!--Indicators-->
                   <ol class="carousel-indicators">
                     <li data-target="#carousel-gift-card" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-gift-card" data-slide-to="1"></li>
                     <li data-target="#carousel-gift-card" data-slide-to="2"></li>
                   </ol>
-                  <!--/.Indicators-->
-                  <!--Slides-->
                   <div class="carousel-inner" role="listbox">
-                    <!--First slide-->
                     <div class="carousel-item active">
                       <img class="d-block w-100" src="img/gift-example/gift-1.png" alt="First slide">
                     </div>
-                    <!--/First slide-->
-                    <!--Second slide-->
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/gift-example/gift-2.jpg" alt="First slide">
                     </div>
-                    <!--/Second slide-->
-                    <!--Third slide-->
                     <div class="carousel-item">
                       <img class="d-block w-100" src="img/gift-example/gift-3.jpg" alt="First slide">
                     </div>
-                    <!--/Third slide-->
                   </div>
-                  <!--/.Slides-->
-                  <!--Controls-->
                   <a class="carousel-control-prev" href="#carousel-gift-card" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -803,7 +812,6 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                   </a>
-                  <!--/.Controls-->
                 </div>
                 <p class="mt15">
                   <a data-toggle="collapse" href="#terms-gift-2" aria-expanded="false" aria-controls="collapseExample"
@@ -816,7 +824,7 @@
                   <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                     richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
                     anderson cred nesciunt sapiente ea proident.</p>
-                </div>
+                </div> -->
               </div>
             </div>
 
@@ -828,248 +836,315 @@
       <div class="container">
 
       </div>
-
       <div class="container">
-        <h2 class="title-strong-orange pt30 mt0">
-          <i class="fa fa-comments-o" aria-hidden="true"></i>
-          Help your community, write your review
-        </h2>
+        <div class="row">
+          <div id="write-review-col" class="col-lg-8">
+            <h2 class="title-strong-orange pt30 mt0">
+              <i class="fa fa-comments-o" aria-hidden="true"></i>
+              Help your community, write your review
+            </h2>
 
-        <!--Section: Leave a reply (Logged In User)-->
-        <section>
-
-          <!--Leave a reply form-->
-          <div class="reply-form post-comment mb20">
-            <div class="row mb0">
-              <!--Image column-->
-              <div class="col-sm-2 col-12">
-                <!-- <img style="width:100px; height:100px;" src="https://team.goohyeah.com/get_profile_avatar"> -->
-                <img style="width:100px; height:100px;" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg">
-              </div>
-              <!--/.Image column-->
-
-              <!--Content column-->
-              <div class="col-sm-10 col-12">
-                <div class="md-form">
-                  <textarea type="text" id="review_txt" class="md-textarea comment-counter"></textarea>
-                  <label for="form8">Your message</label>
-                  <div class="upload-feature">
-                    <ul class="list-inline">
-                      <li>
-                        <a data-toggle="tooltip" data-placement="left" title="Upload your images">
-                          <img src="img/icon/img-upload.png" class="img-thumbnail" alt="" width="40">
-                        </a>
-                      </li>
-
-                      <li>
-                        <a data-toggle="tooltip" data-placement="left" title="Upload your videos">
-                          <img src="img/icon/upload-video.png" alt="" width="40">
-                        </a>
-                      </li>
-                    </ul>
+            <!--Section: Leave a reply (Logged In User)-->
+            <section>
+              <div class="reply-form post-comment mb20">
+                <div class="row mb0">
+                  <div class="col-sm-2 col-12">
+                    <!-- <img style="width:100px; height:100px;" src="https://team.GoWhere.com/get_profile_avatar"> -->
+                    <img style="width:100px; height:100px;"
+                      src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg">
                   </div>
+                  <div class="col-sm-10 col-12">
+                    <div class="md-form">
+                      <textarea type="text" id="review_txt" class="md-textarea comment-counter"></textarea>
+                      <label for="form8">Your message</label>
+                      <div class="comment-submit-section">
+                        <ul class="list-inline">
+                          <li class="rate-star">
+                            <input id="rate-star" name="rate-input" value="" data-min="0" data-max="5" />
+                          </li>
+                          <li>
+                            <button id="review_btn" class="btn btn-orange waves-effect waves-light mb-0">Review</button>
+                          </li>
+                        </ul>
+                        <div id="caption-rate"></div>
+                      </div>
+                      <div class="upload-feature">
+                        <ul class="list-inline">
+                          <li>
+                            <a data-toggle="tooltip" data-placement="left" title="Upload your images">
+                              <img src="img/icon/img-upload.png" class="img-thumbnail" alt="" width="40">
+                            </a>
+                          </li>
+
+                          <li>
+                            <a data-toggle="tooltip" data-placement="left" title="Upload your videos">
+                              <img src="img/icon/upload-video.png" alt="" width="40">
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+
+
                 </div>
-
               </div>
-
-              <div class="text-center">
-                <div class="comment-submit-section">
-                  <ul class="list-inline">
-                    <li class="rate-star">
-                      <input id="rate-star" name="rate-input" value="" data-min="0" data-max="5" />
-                    </li>
-                    <li>
-                      <button id="review_btn" class="btn btn-orange waves-effect waves-light">Review</button>
-                    </li>
-                  </ul>
-                  <div id="caption-rate"></div>
-                </div>
-              </div>
-              <!--/.Content column-->
-
-            </div>
-            <!--/.Third row-->
-          </div>
-          <!--/.Leave a reply form-->
-
-        </section>
-        <!--/Section: Leave a reply (Logged In User)-->
-
-        <ul class="list-inline media-preview">
-          <li class="view hm-zoom">
-            <img src="img/sample/samp-1.jpg" class="img-fluid" />
-            <a href="#" class="close">
-              <span aria-hidden="true">&times;</span>
-            </a>
-          </li>
-          <li class="view hm-zoom">
-            <img src="img/sample/samp-1.jpg" class="img-fluid" />
-            <a href="#" class="close">
-              <span aria-hidden="true">&times;</span>
-            </a>
-          </li>
-          <li class="view hm-zoom">
-            <img src="img/sample/samp-1.jpg" class="img-fluid" />
-            <a href="#" class="close">
-              <span aria-hidden="true">&times;</span>
-            </a>
-          </li>
-          <li class="view hm-zoom">
-            <img src="img/sample/samp-1.jpg" class="img-fluid" />
-            <a href="#" class="close">
-              <span aria-hidden="true">&times;</span>
-            </a>
-          </li>
-        </ul>
+            </section>
+            <!-- <ul class="list-inline media-preview">
+              <li class="view hm-zoom">
+                <img src="img/sample/samp-1.jpg" class="img-fluid" />
+                <a href="#" class="close">
+                  <span aria-hidden="true">&times;</span>
+                </a>
+              </li>
+              <li class="view hm-zoom">
+                <img src="img/sample/samp-1.jpg" class="img-fluid" />
+                <a href="#" class="close">
+                  <span aria-hidden="true">&times;</span>
+                </a>
+              </li>
+              <li class="view hm-zoom">
+                <img src="img/sample/samp-1.jpg" class="img-fluid" />
+                <a href="#" class="close">
+                  <span aria-hidden="true">&times;</span>
+                </a>
+              </li>
+              <li class="view hm-zoom">
+                <img src="img/sample/samp-1.jpg" class="img-fluid" />
+                <a href="#" class="close">
+                  <span aria-hidden="true">&times;</span>
+                </a>
+              </li>
+            </ul> -->
 
 
-        <!-- Nav tabs -->
-        <div class="tabs-wrapper">
-          <ul class="nav classic-tabs tabs-orange" role="tablist" id="biz-review-navigation">
-            <li class="nav-item" id="biz-review-navigation-newest">
-              <a class="nav-link waves-light active" data-toggle="tab" href="#newest" role="tab">Newest</a>
-            </li>
-            <!-- <li class="nav-item" id="biz-review-navigation-oldest">
+            <!-- Nav tabs -->
+            <div class="tabs-wrapper">
+              <ul class="nav classic-tabs tabs-orange" role="tablist" id="biz-review-navigation">
+                <li class="nav-item" id="biz-review-navigation-newest">
+                  <a class="nav-link waves-light active" data-toggle="tab" href="#newest" role="tab">Newest</a>
+                </li>
+                <!-- <li class="nav-item" id="biz-review-navigation-oldest">
                                 <a class="nav-link waves-light" data-toggle="tab" href="#oldest" role="tab">Oldest</a>
                             </li> -->
-            <li class="nav-item" id="biz-review-navigation-popular">
-              <a class="nav-link waves-light" data-toggle="tab" href="#popular" role="tab">Popular</a>
-            </li>
-            <li class="nav-item" id="biz-review-navigation-critical">
-              <a class="nav-link waves-light" data-toggle="tab" href="#critical" role="tab">Critical</a>
-            </li>
-          </ul>
-        </div>
+                <li class="nav-item" id="biz-review-navigation-popular">
+                  <a class="nav-link waves-light" data-toggle="tab" href="#popular" role="tab">Popular</a>
+                </li>
+                <li class="nav-item" id="biz-review-navigation-critical">
+                  <a class="nav-link waves-light" data-toggle="tab" href="#critical" role="tab">Critical</a>
+                </li>
+                <li class="nav-item" id="biz-review-navigation-gowhere">
+                  <a class="nav-link waves-light" data-toggle="tab" href="#gowhere" role="tab">GoWhere</a>
+                </li>
+              </ul>
+            </div>
 
-        <!-- Tab panels -->
-        <div class="tab-content card">
-          <!--Panel 1-->
-          <div class="tab-pane fade in show active" id="newest" role="tabpanel">
-            <!--Section: Social newsfeed v.2-->
-            <section class="pb-3">
+            <!-- Tab panels -->
+            <div class="tab-content card">
+              <!--Panel 1-->
+              <div class="tab-pane fade in show active" id="newest" role="tabpanel">
+                <!--Section: Social newsfeed v.2-->
+                <section class="pb-3">
 
-              <!--Grid row-->
+                  <!--Grid row-->
+                  <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-12">
+
+                      <!--Newsfeed-->
+                      <div id="review_container" class="mdb-feed">
+                        <div class="news">
+                          <!--Label-->
+                          <div class="label">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1-mini.jpg"
+                              class="rounded-circle z-depth-1-half">
+                          </div>
+                          <!--Excert-->
+                          <div class="excerpt">
+                            <!--Brief-->
+                            <div class="brief">
+                              <a class="name">Milky Khanh</a> wrote a review<div class="date">Just posted now</div>
+                              <div id="review-user-star">
+                                <span class="star-yellow">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                  <i class="far fa-star" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </div>
+                            <!--Added text-->
+                            <div class="added-text">Just checkout this fantastic place. Good in general!
+                              <br>
+                              Food Quality: 10
+                              <br>
+                              Service Quality: 7
+                              <br>
+                              Price: 2
+                              <br>
+                              Atmosphere: 9 - Cozy, Quite
+                            </div>
+                            <!--Feed footer-->
+                            <div class="feed-footer">
+                              <a class="comment" data-toggle="collapse" href="#reply-1" aria-expanded="false"
+                                aria-controls="reply-1">Comment</a> &middot;
+                              <!-- <span><a>0</a></span> -->
+                              <a id="review-user-thumb-up" class="thumbs mr10" data-toggle="tooltip"
+                                data-placement="top" title="I like it"><i id="1"
+                                  class="fa fa-thumbs-up neural-up"></i><span id="1" class="total-up-count">0</span></a>
+                              <a id="review-user-thumb-down" class="thumbs mr10" data-toggle="tooltip"
+                                data-placement="top" title="I don't like it"><i id="1"
+                                  class="fa fa-thumbs-down neural-down"></i><span id="1"
+                                  class="total-down-count">0</span></a>
+                              <a class="thumbs mr10" data-toggle="tooltip" data-placement="top"
+                                title="Report bad review"><i class="fa fa-flag"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Newsfeed-->
+
+                    </div>
+                    <!--Grid column-->
+
+                  </div>
+                  <!--Grid row-->
+
+                </section>
+                <!--Section: Social newsfeed v.2-->
+
+              </div>
+
+              <!--Panel 3-->
+              <div class="tab-pane fade" id="popular" role="tabpanel">
+                <!--Section: Social newsfeed v.2-->
+                <section class="pb-3">
+
+                  <!--Grid row-->
+                  <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-12">
+
+                      <!--Newsfeed-->
+                      <div class="mdb-feed" id="review-container-popular">
+
+                      </div>
+                      <!--Newsfeed-->
+
+                    </div>
+                    <!--Grid column-->
+
+                  </div>
+                  <!--Grid row-->
+
+                </section>
+                <!--Section: Social newsfeed v.2-->
+
+              </div>
+              <!--/.Panel 3-->
+
+              <!--Panel 4-->
+              <div class="tab-pane fade" id="critical" role="tabpanel">
+                <!--Section: Social newsfeed v.2-->
+                <section class="pb-3">
+                  <!--Grid row-->
+                  <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-12">
+                      <!--Newsfeed-->
+                      <div class="mdb-feed" id="review-container-critical">
+                      </div>
+                      <!--Newsfeed-->
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </section>
+                <!--Section: Social newsfeed v.2-->
+              </div>
+              <!--/.Panel 4-->
+              <!--Panel 4-->
+              <div class="tab-pane fade" id="gowhere" role="tabpanel">
+                <!--Section: Social newsfeed v.2-->
+                <section class="pb-3">
+                  <!--Grid row-->
+                  <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-12">
+                      <!--Newsfeed-->
+                      <div class="mdb-feed" id="review-container-gowhere">
+                      </div>
+                      <!--Newsfeed-->
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </section>
+                <!--Section: Social newsfeed v.2-->
+              </div>
+              <!--/.Panel 4-->
+            </div>
+          </div>
+          <div id="ask-community-col" class="col-lg-4">
+            <h4 class="title-strong-orange pt30 mt0">Ask The Community</h4>
+            <section class="pb-1">
               <div class="row">
-
-                <!--Grid column-->
                 <div class="col-lg-12">
-
-                  <!--Newsfeed-->
-                  <div id="review_container" class="mdb-feed">
-                    <div class="news">
-                      <!--Label-->
+                  <div id="ask_community" class="mdb-feed">
+                    <div class="input-group mb-2">
+                      <input type="text" class="form-control" placeholder="Ask question..."
+                        aria-label="Ask questions..." aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-orange btn-sm waves-effect waves-light" type="button">Ask</button>
+                      </div>
+                    </div>
+                    <h5 class="">Is it child friendly?</h5>
+                    <div class="news mt10">
                       <div class="label">
                         <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1-mini.jpg"
                           class="rounded-circle z-depth-1-half">
                       </div>
-                      <!--Excert-->
                       <div class="excerpt">
-                        <!--Brief-->
                         <div class="brief">
-                          <a class="name">Eoghan</a> wrote a review<div class="date">Just posted now</div>
-                          <div id="review-user-star">
-                            <span class="star-yellow">
-                              <i class="fa fa-star" aria-hidden="true"></i>
-                              <i class="fa fa-star" aria-hidden="true"></i>
-                              <i class="fa fa-star" aria-hidden="true"></i>
-                              <i class="fa fa-star" aria-hidden="true"></i>
-                              <i class="fa fa-star" aria-hidden="true"></i>
-                            </span>
-                          </div>
+                          Are they nice to your kid? - yes! But it's a bar, there's not really a place for kids
+                          here, get a sitter and enjoy the food.
                         </div>
-                        <!--Added text-->
-                        <div class="added-text">What is this text</div>
-                        <!--Feed footer-->
                         <div class="feed-footer">
-                          <a class="comment" data-toggle="collapse" href="#reply-1" aria-expanded="false"
-                            aria-controls="reply-1">Comment</a> &middot;
-                          <!-- <span><a>0</a></span> -->
-                          <a id="review-user-thumb-up" class="thumbs mr10" data-toggle="tooltip" data-placement="top"
-                            title="I like it"><i id="1" class="fa fa-thumbs-up neural-up"></i><span id="1"
-                              class="total-up-count">0</span></a>
-                          <a id="review-user-thumb-down" class="thumbs mr10" data-toggle="tooltip" data-placement="top"
-                            title="I don't like it"><i id="1" class="fa fa-thumbs-down neural-down"></i><span id="1"
-                              class="total-down-count">0</span></a>
-                          <a class="thumbs mr10" data-toggle="tooltip" data-placement="top" title="Report bad review"><i
-                              class="fa fa-flag"></i></a>
+                          <span>2 months ago</span> &middot; <span>3 people found this helpful</span>
                         </div>
                       </div>
                     </div>
+                    <div><a href="javascript:void();" class="view-answer-more">View 1 more answer</a></div>
+                    <hr>
+                    <h5 class="">Do they have area to celebrate Birthday?</h5>
+                    <div class="news mt10">
+                      <div class="label">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1-mini.jpg"
+                          class="rounded-circle z-depth-1-half">
+                      </div>
+                      <div class="excerpt">
+                        <div class="brief">
+                          Yes of course, they also have special gift and violinist for your special one.
+                        </div>
+                        <div class="feed-footer">
+                          <span>7 days ago</span> &middot; <span>19 people found this helpful</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div><a href="javascript:void();" class="view-answer-more">View 7 more answers</a></div>
+                    <hr>
+                    <div><a href="javascript:void();">See all 8 questions for Happy Restaurant</a></div>
                   </div>
-                  <!--Newsfeed-->
-
                 </div>
-                <!--Grid column-->
-
               </div>
-              <!--Grid row-->
-
             </section>
-            <!--Section: Social newsfeed v.2-->
-
           </div>
-          <!--/.Panel 1-->
-
-          <!--Panel 2-->
-          <!-- <div class="tab-pane fade" id="oldest" role="tabpanel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
-
-                        </div> -->
-          <!--/.Panel 2-->
-
-          <!--Panel 3-->
-          <div class="tab-pane fade" id="popular" role="tabpanel">
-            <!--Section: Social newsfeed v.2-->
-            <section class="pb-3">
-
-              <!--Grid row-->
-              <div class="row">
-
-                <!--Grid column-->
-                <div class="col-lg-12">
-
-                  <!--Newsfeed-->
-                  <div class="mdb-feed" id="review-container-popular">
-
-                  </div>
-                  <!--Newsfeed-->
-
-                </div>
-                <!--Grid column-->
-
-              </div>
-              <!--Grid row-->
-
-            </section>
-            <!--Section: Social newsfeed v.2-->
-
-          </div>
-          <!--/.Panel 3-->
-
-          <!--Panel 4-->
-          <div class="tab-pane fade" id="critical" role="tabpanel">
-            <!--Section: Social newsfeed v.2-->
-            <section class="pb-3">
-              <!--Grid row-->
-              <div class="row">
-                <!--Grid column-->
-                <div class="col-lg-12">
-                  <!--Newsfeed-->
-                  <div class="mdb-feed" id="review-container-critical">
-                  </div>
-                  <!--Newsfeed-->
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row-->
-            </section>
-            <!--Section: Social newsfeed v.2-->
-          </div>
-          <!--/.Panel 4-->
         </div>
       </div>
-
       <div class="container">
         <section class="section">
           <!--Section heading-->
@@ -1136,7 +1211,6 @@
             </div>
           </div>
         </section>
-
       </div>
     </div>
     <footer class="page-footer bg-gradient-strong-orange center-on-small-only">
@@ -1147,7 +1221,7 @@
 
           <div class="col-md-6">
             <p>
-              © 2017 Copyright: <a href="https://goohyeah.com">Goohyeah Corp</a>
+              © 2017 Copyright: <a href="https://GoWhere.com">GoWhere Corp</a>
               . All rights reserved
             </p>
           </div>
@@ -1172,7 +1246,7 @@
       <div class="modal-content">
         <!--Header-->
         <div class="modal-header">
-          <h4 class="modal-title w-100" id="myModalLabel">GoOhYeah</h4>
+          <h4 class="modal-title w-100" id="myModalLabel">GoWhere</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -1279,7 +1353,8 @@
         <div id="profile-card-container" class="modal-body">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et purus tristique purus laoreet mollis eget a
-            libero. Mauris vitae convallis nunc, ac euismod elit. Vestibulum ac vehicula metus. Nam varius mi quis lorem
+            libero. Mauris vitae convallis nunc, ac euismod elit. Vestibulum ac vehicula metus. Nam varius mi quis
+            lorem
             condimentum facilisis. Curabitur iaculis consectetur dolor, venenatis consequat sapien sollicitudin ac.
             Curabitur pretium dictum est sed eleifend. Morbi non semper mauris. In hac habitasse platea dictumst. Sed
             tincidunt sem at tellus commodo rhoncus. Morbi id urna risus. Aliquam euismod non elit in consectetur.
@@ -1287,9 +1362,11 @@
           <p>
             Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec egestas
             venenatis fermentum. Proin ultrices, elit et pharetra lacinia, mauris nibh molestie eros, quis vehicula
-            velit erat vitae eros. Sed convallis aliquam dui, ac ornare orci pharetra et. Curabitur urna metus, posuere
+            velit erat vitae eros. Sed convallis aliquam dui, ac ornare orci pharetra et. Curabitur urna metus,
+            posuere
             ullamcorper lobortis venenatis, molestie nec orci. Cras sed purus ante. Suspendisse fermentum fermentum
-            lacus, quis ullamcorper felis sodales sed. Vestibulum finibus turpis diam, vitae semper purus vestibulum a.
+            lacus, quis ullamcorper felis sodales sed. Vestibulum finibus turpis diam, vitae semper purus vestibulum
+            a.
             Aenean et lacus facilisis augue porttitor facilisis. Aenean vitae justo egestas, molestie odio quis,
             porttitor risus. Nulla non purus ac lacus feugiat vehicula in vitae turpis. Proin convallis cursus odio.
             Praesent non odio fermentum quam interdum auctor ac id nunc.
@@ -1327,7 +1404,8 @@
             </li>
 
             <li>
-              Benefit: Bonous, Parking, Health-check... Health-check... Health-check... Health-check... Health-check...
+              Benefit: Bonous, Parking, Health-check... Health-check... Health-check... Health-check...
+              Health-check...
             </li>
           </ul>
           <ul class="list-circle pl20">
@@ -1367,7 +1445,8 @@
         <div class="modal-body" id="dress-code-card-container">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et purus tristique purus laoreet mollis eget a
-            libero. Mauris vitae convallis nunc, ac euismod elit. Vestibulum ac vehicula metus. Nam varius mi quis lorem
+            libero. Mauris vitae convallis nunc, ac euismod elit. Vestibulum ac vehicula metus. Nam varius mi quis
+            lorem
             condimentum facilisis. Curabitur iaculis consectetur dolor, venenatis consequat sapien sollicitudin ac.
             Curabitur pretium dictum est sed eleifend. Morbi non semper mauris. In hac habitasse platea dictumst. Sed
             tincidunt sem at tellus commodo rhoncus. Morbi id urna risus. Aliquam euismod non elit in consectetur.

@@ -546,7 +546,7 @@ $(function () {
     url += "/api/biz/" + getParameterByName("id");
 
     $.get(url, function (dataObj) {
-      document.title = dataObj.name + " | GoOhYeah";
+      document.title = dataObj.name + " | GoWhere";
       $("#brand-title").html(dataObj.name);
       $("#address").append(dataObj.addr.formal.split(", USA")[0]);
 
