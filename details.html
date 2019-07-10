@@ -91,6 +91,10 @@
     .comment-submit-section .btn {
       margin: 0px;
     }
+
+    .repeated_keywords {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
@@ -500,7 +504,6 @@
                     Request Reservation
                   </a>
                 </p>
-
                 <div id="map-container" class="map-container z-depth-1-half mt20 mb20" style="height:225px">
                   <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7238871785307!2d106.67297251480055!3d10.755750292335538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752efd721bfaed%3A0xadbda163cab8ce0b!2zMzM5IE5ndXnhu4VuIFRyw6NpLCBQaMaw4budbmcgNywgUXXhuq1uIDUsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1497618779364" width="100%" frameborder="0" style="border:0" allowfullscreen data-mh="g2"></iframe> -->
                 </div>
@@ -668,8 +671,9 @@
                               Shuyin Tang
                             </a>
                           </h4>
-                          <p><i class="fa fa-quote-left"></i> A worth place to spend time with family at weekend.
-                            There are many delicacies.</p>
+                          <p><i class="fa fa-quote-left"></i> A worth place to spend time with <span
+                              class="repeated_keywords">family</span> at weekend.
+                            There are many <span class="repeated_keywords">delicacies</span>.</p>
                         </div>
 
                       </div>
@@ -999,18 +1003,18 @@
                         </div>
                         <div class="news">
                           <div class="label">
-                            <img src="img/sample/joyce.jpg" class="rounded-circle z-depth-1-half">
+                            <img src="img/sample/hung.png" class="rounded-circle z-depth-1-half">
                           </div>
                           <div class="excerpt">
                             <div class="brief">
-                              <a class="name">Milky Khanh</a> wrote a review<div class="date">Posted 1w ago</div>
+                              <a class="name">Milky Khanh</a> wrote a review<div class="date">Posted 2 days ago</div>
                               <div id="review-user-star">
                                 <span class="star-yellow">
                                   <i class="fa fa-star" aria-hidden="true"></i>
                                   <i class="fa fa-star" aria-hidden="true"></i>
                                   <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                                  <i class="far fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
                                 </span>
                               </div>
                             </div>
@@ -1018,11 +1022,11 @@
                               <br>
                               Food Quality: 10
                               <br>
-                              Service Quality: 7
+                              Service Quality: 9
                               <br>
-                              Price: 2
+                              Price: 8
                               <br>
-                              Atmosphere: 9 - Cozy, Quite
+                              Atmosphere: 9
                             </div>
                             <div class="feed-footer">
                               <a class="comment" data-toggle="collapse" href="#reply-1" aria-expanded="false"
@@ -1045,7 +1049,7 @@
                           </div>
                           <div class="excerpt">
                             <div class="brief">
-                              <a class="name">Nga Dinh</a> wrote a review<div class="date">Posted 2m ago</div>
+                              <a class="name">Nga Dinh</a> wrote a review<div class="date">Posted 3 days ago</div>
                               <div id="review-user-star">
                                 <span class="star-yellow">
                                   <i class="fa fa-star" aria-hidden="true"></i>
@@ -1128,6 +1132,48 @@
                     <div class="col-lg-12">
                       <!--Newsfeed-->
                       <div class="mdb-feed" id="review-container-critical">
+                        <div class="news">
+                          <div class="label">
+                            <img src="img/sample/an.png" class="rounded-circle z-depth-1-half">
+                          </div>
+                          <div class="excerpt">
+                            <div class="brief">
+                              <a class="name">P</a> wrote a review<div class="date">Posted 1 month ago</div>
+                              <div id="review-user-star">
+                                <span class="star-yellow">
+                                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                  <i class="far fa-star" aria-hidden="true"></i>
+                                  <i class="far fa-star" aria-hidden="true"></i>
+                                  <i class="far fa-star" aria-hidden="true"></i>
+                                  <i class="far fa-star" aria-hidden="true"></i>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="added-text">Just checkout this messy place. Too bad in general!
+                              <br>
+                              Food Quality: 2
+                              <br>
+                              Service Quality: 1
+                              <br>
+                              Price: 2
+                              <br>
+                              Atmosphere: 4
+                            </div>
+                            <div class="feed-footer">
+                              <a class="comment" data-toggle="collapse" href="#reply-1" aria-expanded="false"
+                                aria-controls="reply-1">Comment</a> &middot;
+                              <a id="review-user-thumb-up" class="thumbs mr10" data-toggle="tooltip"
+                                data-placement="top" title="I like it"><i id="1"
+                                  class="fa fa-thumbs-up neural-up"></i><span id="1" class="total-up-count">0</span></a>
+                              <a id="review-user-thumb-down" class="thumbs mr10" data-toggle="tooltip"
+                                data-placement="top" title="I don't like it"><i id="1"
+                                  class="fa fa-thumbs-down neural-down"></i><span id="1"
+                                  class="total-down-count">0</span></a>
+                              <a class="thumbs mr10" data-toggle="tooltip" data-placement="top"
+                                title="Report bad review"><i class="fa fa-flag"></i></a>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       <!--Newsfeed-->
                     </div>
@@ -1160,7 +1206,7 @@
               <!--/.Panel 4-->
             </div>
           </div>
-          <div id="ask-community-col" class="col-lg-4">
+          <div id="ask-community-col" class="col-lg-4 list-store">
             <h4 class="title-strong-orange pt30 mt0">Ask The Community</h4>
             <section class="pb-1">
               <div class="row">
@@ -1213,6 +1259,48 @@
                 </div>
               </div>
             </section>
+            <div class="item">
+              <div class="card">
+                <div>
+                  <a href="javascript:void();" style="font-style:italic;">Sponsored content</a>
+                </div>
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="user-name mb0">
+                    <a href="details.html" class="hover-link inline-block">
+                      Happy restaurant
+                    </a>
+                  </h3>
+                  <div class="card-data pt0">
+                    <ul>
+                      <li class="comment-date">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <strong>333 reviews</strong>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <i class="fa fa-map-marker"></i>
+                        <span class="distance">200m - </span>285 Cách Mạng Tháng 8, Quận 10, Hồ Chí Minh - 090252525
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <a href="#" class="hover-link">
+                          <i class="fa fa-home ml0 mr0"></i>
+                          www.happyrestaurant.com
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
