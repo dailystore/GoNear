@@ -51,8 +51,12 @@
       text-decoration: underline;
     }
 
-    .list-inline>li>a {
+    .container .list-inline>li>a {
       padding-left: 0px;
+    }
+
+    a:hover {
+      text-decoration: none;
     }
 
     .slogan {
@@ -100,7 +104,7 @@
             <li class="nav-item avatar dropdown">
               <a class="nav-link dropdown-toggle waves-effect waves-light" href="#" id="user-avatar"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="https://team.goohyeah.com/get_profile_avatar" class="img-fluid rounded-circle z-depth-0">
+                <!-- <img src="https://team.goohyeah.com/get_profile_avatar" class="img-fluid rounded-circle z-depth-0"> -->
               </a>
               <div class="dropdown-menu dropdown-menu-right">
                 <h6 class="dropdown-header">Welcome <span id="welcome-name"></h6>
@@ -241,7 +245,8 @@
           </div>
           <div class="col-md-2">
             <div class="md-form form-group">
-              <a type="submit" id="search-button" href="list-bk.html" class="btn btn-lg btn-block btn-strong-orange">
+              <a type="submit" id="search-button" href="list_buffet.html"
+                class="btn btn-lg btn-block btn-strong-orange">
                 <i class="fa fa-search"></i>
               </a>
             </div>
@@ -254,6 +259,12 @@
           <img src="img/icon/restaurant.png" alt="" width="20" class="inline-block" />
           <a href="javascript:void();">
             Restaurants
+            <span aria-hidden="true" style="width: 14px; height: 14px; margin-left:15px;"
+              class="icon u-triangle-direction-down dropdown_arrow">
+              <svg class="icon_svg" id="14x14_triangle_down" height="100%" viewBox="0 0 14 14" width="100%">
+                <path d="M7 9L3.5 5h7L7 9z"></path>
+              </svg>
+            </span>
           </a>
         </li>
         <li>
@@ -346,7 +357,7 @@
 
           <div class="col-md-6">
             <p>
-              © 2017 Copyright: <a href="http://kie.io/GoWhere/">GoWhere Corp</a>
+              © 2019 Copyright: <a href="http://kie.io/GoWhere/">GoWhere Corp</a>
               . All rights reserved
             </p>
           </div>

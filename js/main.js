@@ -253,7 +253,7 @@ $(document).ready(function () {
           var swlon = sBound.southwest.lng;
           var swlat = sBound.southwest.lat;
 
-          window.location.href = "list-bk.html?swlon=" + swlon + "&swlat=" + swlat + "&nelon=" + nelon + "&nelat=" + nelat + "&txt=" + sName + "&loc=" + sQuery;
+          window.location.href = "list_buffet.html?swlon=" + swlon + "&swlat=" + swlat + "&nelon=" + nelon + "&nelat=" + nelat + "&txt=" + sName + "&loc=" + sQuery;
         }
       };
       xhttp.open("GET", url, true);
@@ -261,7 +261,7 @@ $(document).ready(function () {
       // xhttp.setRequestHeader("Authorization", window.localStorage.getItem("candy"));
       xhttp.send();
     } else {
-      window.location.href = "list-bk.html?swlon=-117.2824&swlat=32.5348&nelon=-116.9058&nelat=33.1142&loc=Ho%20Chi%20Minh&txt=" + sName;
+      window.location.href = "list_buffet.html?swlon=-117.2824&swlat=32.5348&nelon=-116.9058&nelat=33.1142&loc=Ho%20Chi%20Minh&txt=" + sName;
     }
   });
 
